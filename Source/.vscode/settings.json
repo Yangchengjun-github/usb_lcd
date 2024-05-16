@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "task.h": "c",
+        "gui.h": "c",
+        "define.h": "c",
+        "led.h": "c",
+        "key.h": "c",
+        "lcd.h": "c",
+        "lcd_init.h": "c",
+        "logic.h": "c"
+    }
+}

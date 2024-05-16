@@ -1,0 +1,2432 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           CSKY
+  Version:                           0x1
+  Entry point address:               0x10c
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          389100 (bytes into file)
+  Flags:                             0x21000000
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         2
+  Size of section headers:           40 (bytes)
+  Number of section headers:         168
+  Section header string table index: 165
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00000000 001000 00204c 00  AX  0   0 1024
+  [ 2] .text.__main      PROGBITS        0000204c 00304c 000038 00  AX  0   0  4
+  [ 3] .text.__putchar__ PROGBITS        00002084 003084 000014 00  AX  0   0  4
+  [ 4] .text.myitoa      PROGBITS        00002098 003098 00008c 00  AX  0   0  2
+  [ 5] .text.my_printf   PROGBITS        00002124 003124 0000c6 00  AX  0   0  2
+  [ 6] .text.ADC12_Contr PROGBITS        000021ec 0031ec 000010 00  AX  0   0  4
+  [ 7] .text.ADC12_CMD.p PROGBITS        000021fc 0031fc 000020 00  AX  0   0  4
+  [ 8] .text.ADC12_CLK_C PROGBITS        0000221c 00321c 00002c 00  AX  0   0  4
+  [ 9] .text.ADC12_Softw PROGBITS        00002248 003248 00000a 00  AX  0   0  2
+  [10] .text.ADC12_CMD   PROGBITS        00002254 003254 000028 00  AX  0   0  4
+  [11] .text.ADC12_ready PROGBITS        0000227c 00327c 000014 00  AX  0   0  4
+  [12] .text.ADC12_SEQEN PROGBITS        00002290 003290 000018 00  AX  0   0  4
+  [13] .text.ADC12_Confi PROGBITS        000022a8 0032a8 00007c 00  AX  0   0  4
+  [14] .text.ADC12_Confi PROGBITS        00002324 003324 000198 00  AX  0   0  4
+  [15] .text.ADC12_Conve PROGBITS        000024bc 0034bc 000180 00  AX  0   0  4
+  [16] .text.BT_DeInit   PROGBITS        0000263c 00363c 00001c 00  AX  0   0  2
+  [17] .text.BT_Start    PROGBITS        00002658 003658 000008 00  AX  0   0  2
+  [18] .text.BT_Soft_Res PROGBITS        00002660 003660 00000a 00  AX  0   0  2
+  [19] .text.BT_Configur PROGBITS        0000266a 00366a 000018 00  AX  0   0  2
+  [20] .text.BT_ControlS PROGBITS        00002682 003682 00002c 00  AX  0   0  2
+  [21] .text.BT_Period_C PROGBITS        000026ae 0036ae 000006 00  AX  0   0  2
+  [22] .text.BT_ConfigIn PROGBITS        000026b4 0036b4 000012 00  AX  0   0  2
+  [23] .text.BT0_INT_ENA PROGBITS        000026c8 0036c8 000010 00  AX  0   0  4
+  [24] .text.CORET_DeIni PROGBITS        000026d8 0036d8 000018 00  AX  0   0  4
+  [25] .text.CORET_Int_E PROGBITS        000026f0 0036f0 000018 00  AX  0   0  4
+  [26] .text.CORET_start PROGBITS        00002708 003708 000010 00  AX  0   0  4
+  [27] .text.CORET_CLKSO PROGBITS        00002718 003718 000010 00  AX  0   0  4
+  [28] .text.CORET_TICKI PROGBITS        00002728 003728 000010 00  AX  0   0  4
+  [29] .text.CORET_reloa PROGBITS        00002738 003738 000010 00  AX  0   0  4
+  [30] .text.GPIO_Init   PROGBITS        00002748 003748 0000e0 00  AX  0   0  4
+  [31] .text.GPIO_Write_ PROGBITS        00002828 003828 000008 00  AX  0   0  2
+  [32] .text.GPIO_Write_ PROGBITS        00002830 003830 000008 00  AX  0   0  2
+  [33] .text.Page_Progra PROGBITS        00002838 003838 0000a0 00  AX  0   0  4
+  [34] .text.ReadDataArr PROGBITS        000028d8 0038d8 00002e 00  AX  0   0  2
+  [35] .text.LPT_Soft_Re PROGBITS        00002908 003908 000014 00  AX  0   0  4
+  [36] .text.SPI_DeInit  PROGBITS        0000291c 00391c 000020 00  AX  0   0  4
+  [37] .text.SPI_NSS_IO_ PROGBITS        0000293c 00393c 000034 00  AX  0   0  4
+  [38] .text.SPI_Master_ PROGBITS        00002970 003970 0000b0 00  AX  0   0  4
+  [39] .text.SPI_ConfigI PROGBITS        00002a20 003a20 00001c 00  AX  0   0  4
+  [40] .text.SPI_Int_Ena PROGBITS        00002a3c 003a3c 000010 00  AX  0   0  4
+  [41] .text.SYSCON_Gene PROGBITS        00002a4c 003a4c 000074 00  AX  0   0  4
+  [42] .text.SYSCON_RST_ PROGBITS        00002ac0 003ac0 000058 00  AX  0   0  4
+  [43] .text.SYSCON_Gene PROGBITS        00002b18 003b18 000030 00  AX  0   0  4
+  [44] .text.SystemCLK_H PROGBITS        00002b48 003b48 000078 00  AX  0   0  4
+  [45] .text.SYSCON_HFOS PROGBITS        00002bc0 003bc0 000028 00  AX  0   0  4
+  [46] .text.SYSCON_WDT_ PROGBITS        00002be8 003be8 00003c 00  AX  0   0  4
+  [47] .text.SYSCON_IWDC PROGBITS        00002c24 003c24 000014 00  AX  0   0  4
+  [48] .text.SYSCON_IWDC PROGBITS        00002c38 003c38 000018 00  AX  0   0  4
+  [49] .text.SYSCON_LVD_ PROGBITS        00002c50 003c50 000020 00  AX  0   0  4
+  [50] .text.LVD_Int_Ena PROGBITS        00002c70 003c70 00001c 00  AX  0   0  4
+  [51] .text.EXTI_trigge PROGBITS        00002c8c 003c8c 000040 00  AX  0   0  4
+  [52] .text.SYSCON_Int_ PROGBITS        00002ccc 003ccc 00000c 00  AX  0   0  4
+  [53] .text.tk_paramete PROGBITS        00002cd8 003cd8 00011c 00  AX  0   0  4
+  [54] .text.UART1_DeIni PROGBITS        00002df4 003df4 000018 00  AX  0   0  4
+  [55] .text.UART_IO_Ini PROGBITS        00002e0c 003e0c 0000d8 00  AX  0   0  4
+  [56] .text.UARTInit    PROGBITS        00002ee4 003ee4 00000a 00  AX  0   0  2
+  [57] .text.UARTTxByte  PROGBITS        00002eee 003eee 00000e 00  AX  0   0  2
+  [58] .text.WWDT_CONFIG PROGBITS        00002efc 003efc 000018 00  AX  0   0  4
+  [59] .text.WWDT_CNT_Lo PROGBITS        00002f14 003f14 000010 00  AX  0   0  4
+  [60] .text.WWDT_Int_Co PROGBITS        00002f24 003f24 000034 00  AX  0   0  4
+  [61] .text.startup.mai PROGBITS        00002f58 003f58 0000b8 00  AX  0   0  4
+  [62] .text.delay_nms   PROGBITS        00003010 004010 00002c 00  AX  0   0  2
+  [63] .text.GPIO_CONFIG PROGBITS        0000303c 00403c 00006c 00  AX  0   0  4
+  [64] .text.BT_CONFIG   PROGBITS        000030a8 0040a8 000060 00  AX  0   0  4
+  [65] .text.SPI_MASTER_ PROGBITS        00003108 004108 000038 00  AX  0   0  2
+  [66] .text.UART1_CONFI PROGBITS        00003140 004140 000020 00  AX  0   0  4
+  [67] .text.SYSCON_CONF PROGBITS        00003160 004160 000074 00  AX  0   0  2
+  [68] .text.APT32F102_i PROGBITS        000031d4 0041d4 00003c 00  AX  0   0  4
+  [69] .text.SYSCONIntHa PROGBITS        00003210 004210 0000f8 00  AX  0   0  4
+  [70] .text.IFCIntHandl PROGBITS        00003308 004308 000068 00  AX  0   0  4
+  [71] .text.ADCIntHandl PROGBITS        00003370 004370 000068 00  AX  0   0  4
+  [72] .text.EPT0IntHand PROGBITS        000033d8 0043d8 0001a8 00  AX  0   0  4
+  [73] .text.WWDTHandler PROGBITS        00003580 004580 000034 00  AX  0   0  4
+  [74] .text.GPT0IntHand PROGBITS        000035b4 0045b4 000080 00  AX  0   0  4
+  [75] .text.RTCIntHandl PROGBITS        00003634 004634 000070 00  AX  0   0  4
+  [76] .text.UART0IntHan PROGBITS        000036a4 0046a4 00003c 00  AX  0   0  4
+  [77] .text.UART1IntHan PROGBITS        000036e0 0046e0 00003c 00  AX  0   0  4
+  [78] .text.UART2IntHan PROGBITS        0000371c 00471c 00003c 00  AX  0   0  4
+  [79] .text.SPI0IntHand PROGBITS        00003758 004758 0000e8 00  AX  0   0  4
+  [80] .text.SIO0IntHand PROGBITS        00003840 004840 000084 00  AX  0   0  4
+  [81] .text.EXI0IntHand PROGBITS        000038c4 0048c4 000030 00  AX  0   0  4
+  [82] .text.EXI1IntHand PROGBITS        000038f4 0048f4 000030 00  AX  0   0  4
+  [83] .text.EXI2to3IntH PROGBITS        00003924 004924 000048 00  AX  0   0  4
+  [84] .text.EXI4to9IntH PROGBITS        0000396c 00496c 00005c 00  AX  0   0  4
+  [85] .text.EXI10to15In PROGBITS        000039c8 0049c8 000060 00  AX  0   0  4
+  [86] .text.LPTIntHandl PROGBITS        00003a28 004a28 000034 00  AX  0   0  4
+  [87] .text.BT0IntHandl PROGBITS        00003a5c 004a5c 000050 00  AX  0   0  4
+  [88] .text.BT1IntHandl PROGBITS        00003aac 004aac 000048 00  AX  0   0  4
+  [89] .text.PriviledgeV PROGBITS        00003af4 004af4 000002 00  AX  0   0  2
+  [90] .text.PendTrapHan PROGBITS        00003af6 004af6 000008 00  AX  0   0  2
+  [91] .text.Trap3Handle PROGBITS        00003afe 004afe 000008 00  AX  0   0  2
+  [92] .text.Trap2Handle PROGBITS        00003b06 004b06 000008 00  AX  0   0  2
+  [93] .text.Trap1Handle PROGBITS        00003b0e 004b0e 000008 00  AX  0   0  2
+  [94] .text.Trap0Handle PROGBITS        00003b16 004b16 000008 00  AX  0   0  2
+  [95] .text.UnrecExecpH PROGBITS        00003b1e 004b1e 000008 00  AX  0   0  2
+  [96] .text.BreakPointH PROGBITS        00003b26 004b26 000008 00  AX  0   0  2
+  [97] .text.AccessErrHa PROGBITS        00003b2e 004b2e 000008 00  AX  0   0  2
+  [98] .text.IllegalInst PROGBITS        00003b36 004b36 000008 00  AX  0   0  2
+  [99] .text.MisalignedH PROGBITS        00003b3e 004b3e 000008 00  AX  0   0  2
+  [100] .text.CNTAIntHand PROGBITS        00003b46 004b46 000008 00  AX  0   0  2
+  [101] .text.I2CIntHandl PROGBITS        00003b4e 004b4e 000008 00  AX  0   0  2
+  [102] .text.__divsi3    PROGBITS        00003b58 004b58 000024 00  AX  0   0  4
+  [103] .text.__udivsi3   PROGBITS        00003b7c 004b7c 000024 00  AX  0   0  4
+  [104] .text.__umodsi3   PROGBITS        00003ba0 004ba0 000024 00  AX  0   0  4
+  [105] .text.CK_CPU_EnAl PROGBITS        00003bc4 004bc4 000006 00  AX  0   0  2
+  [106] .text.adc_conver  PROGBITS        00003bcc 004bcc 0001a4 00  AX  0   0  4
+  [107] .text.adc_task    PROGBITS        00003d70 004d70 00001c 00  AX  0   0  2
+  [108] .text.key_scan1   PROGBITS        00003d8c 004d8c 000064 00  AX  0   0  4
+  [109] .text.key_scan2   PROGBITS        00003df0 004df0 000064 00  AX  0   0  4
+  [110] .text.key_scan3   PROGBITS        00003e54 004e54 000064 00  AX  0   0  4
+  [111] .text.task_key    PROGBITS        00003eb8 004eb8 000024 00  AX  0   0  4
+  [112] .text.task_sys    PROGBITS        00003edc 004edc 000084 00  AX  0   0  4
+  [113] .text.cal_comput  PROGBITS        00003f60 004f60 000188 00  AX  0   0  4
+  [114] .text.Task_Marks_ PROGBITS        000040e8 0050e8 000038 00  AX  0   0  4
+  [115] .text.Task_Pro_Ha PROGBITS        00004120 005120 000030 00  AX  0   0  4
+  [116] .text.gui_home    PROGBITS        00004150 005150 0000f0 00  AX  0   0  4
+  [117] .text.gui_set     PROGBITS        00004240 005240 0000ac 00  AX  0   0  4
+  [118] .text.gui_option2 PROGBITS        000042ec 0052ec 000034 00  AX  0   0  4
+  [119] .text.gui_calibra PROGBITS        00004320 005320 00032c 00  AX  0   0  4
+  [120] .text.task_gui    PROGBITS        0000464c 00564c 0000a4 00  AX  0   0  4
+  [121] .text.LCD_Fill    PROGBITS        000046f0 0056f0 000038 00  AX  0   0  2
+  [122] .text.LCD_DrawPoi PROGBITS        00004728 005728 000014 00  AX  0   0  2
+  [123] .text.LCD_ShowCha PROGBITS        0000473c 00573c 00012c 00  AX  0   0  4
+  [124] .text.LCD_ShowStr PROGBITS        00004868 005868 000040 00  AX  0   0  2
+  [125] .text.LCD_ShowInt PROGBITS        000048a8 0058a8 00009c 00  AX  0   0  2
+  [126] .text.LCD_WR_DATA PROGBITS        00004944 005944 000020 00  AX  0   0  4
+  [127] .text.LCD_WR_DATA PROGBITS        00004964 005964 000038 00  AX  0   0  4
+  [128] .text.LCD_WR_REG  PROGBITS        0000499c 00599c 00003c 00  AX  0   0  4
+  [129] .text.LCD_Address PROGBITS        000049d8 0059d8 000038 00  AX  0   0  2
+  [130] .text.LCD_Init    PROGBITS        00004a10 005a10 00024c 00  AX  0   0  4
+  [131] .text.TK_ConfigIn PROGBITS        00004c5c 005c5c 000010 00  AX  0   0  4
+  [132] .text.tk_clk_conf PROGBITS        00004c6c 005c6c 000028 00  AX  0   0  4
+  [133] .text.TK_con0_con PROGBITS        00004c94 005c94 0000bc 00  AX  0   0  4
+  [134] .text.TK_IO_Enabl PROGBITS        00004d50 005d50 000134 00  AX  0   0  4
+  [135] .text.TK_Sampling PROGBITS        00004e84 005e84 0000cc 00  AX  0   0  4
+  [136] .text.TKEYIntHand PROGBITS        00004f50 005f50 0000a0 00  AX  0   0  4
+  [137] .text.get_key_num PROGBITS        00004ff0 005ff0 000028 00  AX  0   0  4
+  [138] .text.TK_Baseline PROGBITS        00005018 006018 00013c 00  AX  0   0  4
+  [139] .text.TK_Scan_Sta PROGBITS        00005154 006154 000058 00  AX  0   0  4
+  [140] .text.TK_Keymap_p PROGBITS        000051ac 0061ac 0003e8 00  AX  0   0  4
+  [141] .text.TK_overflow PROGBITS        00005594 006594 000114 00  AX  0   0  4
+  [142] .text.TK_Baseline PROGBITS        000056a8 0066a8 000504 00  AX  0   0  4
+  [143] .text.TK_result_p PROGBITS        00005bac 006bac 0000fc 00  AX  0   0  4
+  [144] .text.CORETHandle PROGBITS        00005ca8 006ca8 000078 00  AX  0   0  4
+  [145] .text.get_key_seq PROGBITS        00005d20 006d20 000034 00  AX  0   0  4
+  [146] .text.CORET_CONFI PROGBITS        00005d54 006d54 000038 00  AX  0   0  4
+  [147] .text.tk_chxval_s PROGBITS        00005d8c 006d8c 00001c 00  AX  0   0  4
+  [148] .text.tk_init     PROGBITS        00005da8 006da8 0001bc 00  AX  0   0  4
+  [149] .text.std_clk_cal PROGBITS        00005f64 006f64 000284 00  AX  0   0  4
+  [150] .RomCode          PROGBITS        000061e8 00b0f8 000000 00   W  0   0  1
+  [151] .rodata           PROGBITS        000061e8 0071e8 0035b4 00   A  0   0  4
+  [152] .data             PROGBITS        20000000 00b000 0000f8 00  WA  0   0  4
+  [153] .bss              NOBITS          200000f8 00b0f8 000414 00  WA  0   0  4
+  [154] .csky.attributes  CSKY_ATTRIBUTES 00000000 00b0f8 000022 00      0   0  1
+  [155] .comment          PROGBITS        00000000 00b11a 000042 01  MS  0   0  1
+  [156] .csky_stack_size  PROGBITS        00000000 00b160 0008cc 00      0   0 16
+  [157] .debug_line       PROGBITS        00000000 00ba2c 00381b 00      0   0  1
+  [158] .debug_info       PROGBITS        00000000 00f247 0388da 00      0   0  1
+  [159] .debug_abbrev     PROGBITS        00000000 047b21 0032f2 00      0   0  1
+  [160] .debug_aranges    PROGBITS        00000000 04ae18 000cc0 00      0   0  8
+  [161] .debug_ranges     PROGBITS        00000000 04bad8 000b70 00      0   0  1
+  [162] .debug_str        PROGBITS        00000000 04c648 007a6c 01  MS  0   0  1
+  [163] .debug_frame      PROGBITS        00000000 0540b4 001d0c 00      0   0  4
+  [164] .debug_loc        PROGBITS        00000000 055dc0 002937 00      0   0  1
+  [165] .shstrtab         STRTAB          00000000 05e2d5 000d15 00      0   0  1
+  [166] .symtab           SYMTAB          00000000 0586f8 0045d0 10     167 773  4
+  [167] .strtab           STRTAB          00000000 05ccc8 00160d 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x001000 0x00000000 0x00000000 0x0979c 0x0979c R E 0x1000
+  LOAD           0x00b000 0x20000000 0x0000979c 0x000f8 0x0050c RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text .text.__main .text.__putchar__ .text.myitoa .text.my_printf .text.ADC12_Control .text.ADC12_CMD.part.0 .text.ADC12_CLK_CMD .text.ADC12_Software_Reset .text.ADC12_CMD .text.ADC12_ready_wait .text.ADC12_SEQEND_wait .text.ADC12_Configure_Mode .text.ADC12_Configure_VREF_Selecte .text.ADC12_ConversionChannel_Config .text.BT_DeInit .text.BT_Start .text.BT_Soft_Reset .text.BT_Configure .text.BT_ControlSet_Configure .text.BT_Period_CMP_Write .text.BT_ConfigInterrupt_CMD .text.BT0_INT_ENABLE .text.CORET_DeInit .text.CORET_Int_Enable .text.CORET_start .text.CORET_CLKSOURCE_EX .text.CORET_TICKINT_Enable .text.CORET_reload .text.GPIO_Init .text.GPIO_Write_High .text.GPIO_Write_Low .text.Page_ProgramData .text.ReadDataArry .text.LPT_Soft_Reset .text.SPI_DeInit .text.SPI_NSS_IO_Init .text.SPI_Master_Init .text.SPI_ConfigInterrupt_CMD .text.SPI_Int_Enable .text.SYSCON_General_CMD.part.0 .text.SYSCON_RST_VALUE .text.SYSCON_General_CMD .text.SystemCLK_HCLKDIV_PCLKDIV_Config .text.SYSCON_HFOSC_SELECTE .text.SYSCON_WDT_CMD .text.SYSCON_IWDCNT_Reload .text.SYSCON_IWDCNT_Config .text.SYSCON_LVD_Config .text.LVD_Int_Enable .text.EXTI_trigger_CMD .text.SYSCON_Int_Enable .text.tk_parameter_init .text.UART1_DeInit .text.UART_IO_Init .text.UARTInit .text.UARTTxByte .text.WWDT_CONFIG .text.WWDT_CNT_Load .text.WWDT_Int_Config .text.startup.main .text.delay_nms .text.GPIO_CONFIG .text.BT_CONFIG .text.SPI_MASTER_CONFIG .text.UART1_CONFIG .text.SYSCON_CONFIG .text.APT32F102_init .text.SYSCONIntHandler .text.IFCIntHandler .text.ADCIntHandler .text.EPT0IntHandler .text.WWDTHandler .text.GPT0IntHandler .text.RTCIntHandler .text.UART0IntHandler .text.UART1IntHandler .text.UART2IntHandler .text.SPI0IntHandler .text.SIO0IntHandler .text.EXI0IntHandler .text.EXI1IntHandler .text.EXI2to3IntHandler .text.EXI4to9IntHandler .text.EXI10to15IntHandler .text.LPTIntHandler .text.BT0IntHandler .text.BT1IntHandler .text.PriviledgeVioHandler .text.PendTrapHandler .text.Trap3Handler .text.Trap2Handler .text.Trap1Handler .text.Trap0Handler .text.UnrecExecpHandler .text.BreakPointHandler .text.AccessErrHandler .text.IllegalInstrHandler .text.MisalignedHandler .text.CNTAIntHandler .text.I2CIntHandler .text.__divsi3 .text.__udivsi3 .text.__umodsi3 .text.CK_CPU_EnAllNormalIrq .text.adc_conver .text.adc_task .text.key_scan1 .text.key_scan2 .text.key_scan3 .text.task_key .text.task_sys .text.cal_comput .text.Task_Marks_Handler_Callback .text.Task_Pro_Handler_Callback .text.gui_home .text.gui_set .text.gui_option2 .text.gui_calibration .text.task_gui .text.LCD_Fill .text.LCD_DrawPoint .text.LCD_ShowChar .text.LCD_ShowString .text.LCD_ShowIntNum .text.LCD_WR_DATA8 .text.LCD_WR_DATA .text.LCD_WR_REG .text.LCD_Address_Set .text.LCD_Init .text.TK_ConfigInterrupt_CMD.part.0 .text.tk_clk_config .text.TK_con0_config .text.TK_IO_Enable .text.TK_Sampling_prog .text.TKEYIntHandler .text.get_key_number .text.TK_Baseline_prog .text.TK_Scan_Start .text.TK_Keymap_prog .text.TK_overflow_predict .text.TK_Baseline_tracking .text.TK_result_prog .text.CORETHandler .text.get_key_seq .text.CORET_CONFIG .text.tk_chxval_seqxcon_clr .text.tk_init .text.std_clk_calib .rodata 
+   01     .data .bss 
+======================================================================
+Csky GNU Linker
+
+======================================================================
+
+Section Cross References
+
+	Obj/arch_apt32f102a_iostring.o(.text.my_printf) refers to Obj/arch_apt32f102a_iostring.o(.text.__putchar__) for __putchar__
+	Obj/arch_apt32f102a_iostring.o(.text.my_printf) refers to Obj/arch_apt32f102a_iostring.o(.text.myitoa) for myitoa
+	Obj/User_logic.o(.text.task_sys) refers to Obj/arch_apt32f102a_iostring.o(.text.my_printf) for my_printf
+	Obj/FWlib_apt32f102a_adc.o(.text.ADC12_CMD.part.0) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Control) for ADC12_Control
+	Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Software_Reset) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Control) for ADC12_Control
+	Obj/FWlib_apt32f102a_adc.o(.text.ADC12_CMD) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Control) for ADC12_Control
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Control) for ADC12_Control
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_CLK_CMD) for ADC12_CLK_CMD
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Software_Reset) for ADC12_Software_Reset
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_CMD) for ADC12_CMD
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_ready_wait) for ADC12_ready_wait
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_SEQEND_wait) for ADC12_SEQEND_wait
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Configure_Mode) for ADC12_Configure_Mode
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_Configure_VREF_Selecte) for ADC12_Configure_VREF_Selecte
+	Obj/User_analog.o(.text.adc_conver) refers to Obj/FWlib_apt32f102a_adc.o(.text.ADC12_ConversionChannel_Config) for ADC12_ConversionChannel_Config
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_DeInit) for BT_DeInit
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_Start) for BT_Start
+	FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_Soft_Reset) for BT_Soft_Reset
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_Configure) for BT_Configure
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_ControlSet_Configure) for BT_ControlSet_Configure
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_Period_CMP_Write) for BT_Period_CMP_Write
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_ConfigInterrupt_CMD) for BT_ConfigInterrupt_CMD
+	FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT_ConfigInterrupt_CMD) for BT_ConfigInterrupt_CMD
+	Obj/apt32f102a_initial.o(.text.BT_CONFIG) refers to Obj/FWlib_apt32f102a_bt.o(.text.BT0_INT_ENABLE) for BT0_INT_ENABLE
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_DeInit) for CORET_DeInit
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_Int_Enable) for CORET_Int_Enable
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_start) for CORET_start
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_CLKSOURCE_EX) for CORET_CLKSOURCE_EX
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_TICKINT_Enable) for CORET_TICKINT_Enable
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_coret.o(.text.CORET_reload) for CORET_reload
+	Obj/apt32f102a_initial.o(.text.GPIO_CONFIG) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Init) for GPIO_Init
+	Obj/apt32f102a_initial.o(.text.GPIO_CONFIG) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_High) for GPIO_Write_High
+	Obj/User_logic.o(.text.task_sys) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_High) for GPIO_Write_High
+	Obj/LCD_lcd_init.o(.text.LCD_WR_REG) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_High) for GPIO_Write_High
+	Obj/LCD_lcd_init.o(.text.LCD_Init) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_High) for GPIO_Write_High
+	Obj/User_logic.o(.text.task_sys) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_Low) for GPIO_Write_Low
+	Obj/LCD_lcd_init.o(.text.LCD_WR_REG) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_Low) for GPIO_Write_Low
+	Obj/LCD_lcd_init.o(.text.LCD_Init) refers to Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Write_Low) for GPIO_Write_Low
+	Obj/User_logic.o(.text.cal_comput) refers to Obj/FWlib_apt32f102a_ifc.o(.text.Page_ProgramData) for Page_ProgramData
+	Obj/User_gui.o(.text.gui_calibration) refers to Obj/FWlib_apt32f102a_ifc.o(.text.Page_ProgramData) for Page_ProgramData
+	Obj/main.o(.text.startup.main) refers to Obj/FWlib_apt32f102a_ifc.o(.text.ReadDataArry) for ReadDataArry
+	FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) refers to Obj/FWlib_apt32f102a_lpt.o(.text.LPT_Soft_Reset) for LPT_Soft_Reset
+	Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) refers to Obj/FWlib_apt32f102a_spi.o(.text.SPI_DeInit) for SPI_DeInit
+	Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) refers to Obj/FWlib_apt32f102a_spi.o(.text.SPI_NSS_IO_Init) for SPI_NSS_IO_Init
+	Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) refers to Obj/FWlib_apt32f102a_spi.o(.text.SPI_Master_Init) for SPI_Master_Init
+	Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) refers to Obj/FWlib_apt32f102a_spi.o(.text.SPI_ConfigInterrupt_CMD) for SPI_ConfigInterrupt_CMD
+	Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) refers to Obj/FWlib_apt32f102a_spi.o(.text.SPI_Int_Enable) for SPI_Int_Enable
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_RST_VALUE) for SYSCON_RST_VALUE
+	Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_HFOSC_SELECTE) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_General_CMD) for SYSCON_General_CMD
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_General_CMD) for SYSCON_General_CMD
+	FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_General_CMD) for SYSCON_General_CMD
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SystemCLK_HCLKDIV_PCLKDIV_Config) for SystemCLK_HCLKDIV_PCLKDIV_Config
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_HFOSC_SELECTE) for SYSCON_HFOSC_SELECTE
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_WDT_CMD) for SYSCON_WDT_CMD
+	Obj/main.o(.text.startup.main) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_IWDCNT_Reload) for SYSCON_IWDCNT_Reload
+	Obj/apt32f102a_initial.o(.text.delay_nms) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_IWDCNT_Reload) for SYSCON_IWDCNT_Reload
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_IWDCNT_Reload) for SYSCON_IWDCNT_Reload
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_IWDCNT_Config) for SYSCON_IWDCNT_Config
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_LVD_Config) for SYSCON_LVD_Config
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.LVD_Int_Enable) for LVD_Int_Enable
+	Obj/apt32f102a_interrupt.o(.text.EPT0IntHandler) refers to Obj/FWlib_apt32f102a_syscon.o(.text.EXTI_trigger_CMD) for EXTI_trigger_CMD
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_syscon.o(.text.SYSCON_Int_Enable) for SYSCON_Int_Enable
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to Obj/FWlib_apt32f102a_tkey_parameter.o(.text.tk_parameter_init) for tk_parameter_init
+	Obj/arch_apt32f102a_iostring.o(.text.__putchar__) refers to Obj/FWlib_apt32f102a_uart.o(.text.UARTTxByte) for UARTTxByte
+	Obj/apt32f102a_initial.o(.text.UART1_CONFIG) refers to Obj/FWlib_apt32f102a_uart.o(.text.UART1_DeInit) for UART1_DeInit
+	Obj/apt32f102a_initial.o(.text.UART1_CONFIG) refers to Obj/FWlib_apt32f102a_uart.o(.text.UART_IO_Init) for UART_IO_Init
+	Obj/apt32f102a_initial.o(.text.UART1_CONFIG) refers to Obj/FWlib_apt32f102a_uart.o(.text.UARTInit) for UARTInit
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_wwdt.o(.text.WWDT_CONFIG) for WWDT_CONFIG
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_wwdt.o(.text.WWDT_CNT_Load) for WWDT_CNT_Load
+	Obj/apt32f102a_interrupt.o(.text.WWDTHandler) refers to Obj/FWlib_apt32f102a_wwdt.o(.text.WWDT_CNT_Load) for WWDT_CNT_Load
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to Obj/FWlib_apt32f102a_wwdt.o(.text.WWDT_Int_Config) for WWDT_Int_Config
+	Obj/LCD_lcd_init.o(.text.LCD_Init) refers to Obj/apt32f102a_initial.o(.text.delay_nms) for delay_nms
+	FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) refers to Obj/apt32f102a_initial.o(.text.delay_nms) for delay_nms
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/apt32f102a_initial.o(.text.GPIO_CONFIG) for GPIO_CONFIG
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/apt32f102a_initial.o(.text.BT_CONFIG) for BT_CONFIG
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/apt32f102a_initial.o(.text.SPI_MASTER_CONFIG) for SPI_MASTER_CONFIG
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/apt32f102a_initial.o(.text.UART1_CONFIG) for UART1_CONFIG
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) for SYSCON_CONFIG
+	Obj/main.o(.text.startup.main) refers to Obj/apt32f102a_initial.o(.text.APT32F102_init) for APT32F102_init
+	FWlib_apt32f102_tkey.o(.text.TK_Keymap_prog) refers to Obj/drivers_apt32f102.o(.text.__divsi3) for __divsi3
+	FWlib_apt32f102_tkey.o(.text.TK_overflow_predict) refers to Obj/drivers_apt32f102.o(.text.__divsi3) for __divsi3
+	Obj/arch_apt32f102a_iostring.o(.text.myitoa) refers to Obj/drivers_apt32f102.o(.text.__udivsi3) for __udivsi3
+	Obj/LCD_lcd.o(.text.LCD_ShowIntNum) refers to Obj/drivers_apt32f102.o(.text.__udivsi3) for __udivsi3
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to Obj/drivers_apt32f102.o(.text.__udivsi3) for __udivsi3
+	FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) refers to Obj/drivers_apt32f102.o(.text.__udivsi3) for __udivsi3
+	Obj/arch_apt32f102a_iostring.o(.text.myitoa) refers to Obj/drivers_apt32f102.o(.text.__umodsi3) for __umodsi3
+	Obj/LCD_lcd.o(.text.LCD_ShowChar) refers to Obj/drivers_apt32f102.o(.text.__umodsi3) for __umodsi3
+	Obj/LCD_lcd.o(.text.LCD_ShowIntNum) refers to Obj/drivers_apt32f102.o(.text.__umodsi3) for __umodsi3
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to Obj/drivers_apt32f102_ck801.o(.text.CK_CPU_EnAllNormalIrq) for CK_CPU_EnAllNormalIrq
+	Obj/User_analog.o(.text.adc_task) refers to Obj/User_analog.o(.text.adc_conver) for adc_conver
+	Obj/User_key.o(.text.task_key) refers to Obj/User_key.o(.text.key_scan1) for key_scan1
+	Obj/User_key.o(.text.task_key) refers to Obj/User_key.o(.text.key_scan2) for key_scan2
+	Obj/User_key.o(.text.task_key) refers to Obj/User_key.o(.text.key_scan3) for key_scan3
+	Obj/apt32f102a_interrupt.o(.text.BT0IntHandler) refers to Obj/User_key.o(.text.task_key) for task_key
+	Obj/User_gui.o(.text.gui_calibration) refers to Obj/User_logic.o(.text.cal_comput) for cal_comput
+	Obj/apt32f102a_interrupt.o(.text.BT0IntHandler) refers to Obj/User_task.o(.text.Task_Marks_Handler_Callback) for Task_Marks_Handler_Callback
+	Obj/main.o(.text.startup.main) refers to Obj/User_task.o(.text.Task_Pro_Handler_Callback) for Task_Pro_Handler_Callback
+	Obj/main.o(.text.startup.main) refers to Obj/LCD_lcd.o(.text.LCD_Fill) for LCD_Fill
+	Obj/User_gui.o(.text.gui_home) refers to Obj/LCD_lcd.o(.text.LCD_Fill) for LCD_Fill
+	Obj/User_gui.o(.text.task_gui) refers to Obj/LCD_lcd.o(.text.LCD_Fill) for LCD_Fill
+	Obj/LCD_lcd.o(.text.LCD_ShowChar) refers to Obj/LCD_lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
+	Obj/LCD_lcd.o(.text.LCD_ShowString) refers to Obj/LCD_lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
+	Obj/LCD_lcd.o(.text.LCD_ShowIntNum) refers to Obj/LCD_lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
+	Obj/User_gui.o(.text.gui_home) refers to Obj/LCD_lcd.o(.text.LCD_ShowString) for LCD_ShowString
+	Obj/User_gui.o(.text.gui_set) refers to Obj/LCD_lcd.o(.text.LCD_ShowString) for LCD_ShowString
+	Obj/User_gui.o(.text.gui_option2) refers to Obj/LCD_lcd.o(.text.LCD_ShowString) for LCD_ShowString
+	Obj/User_gui.o(.text.gui_calibration) refers to Obj/LCD_lcd.o(.text.LCD_ShowString) for LCD_ShowString
+	Obj/User_gui.o(.text.gui_home) refers to Obj/LCD_lcd.o(.text.LCD_ShowIntNum) for LCD_ShowIntNum
+	Obj/LCD_lcd_init.o(.text.LCD_Init) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_DATA8) for LCD_WR_DATA8
+	Obj/LCD_lcd.o(.text.LCD_Fill) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+	Obj/LCD_lcd.o(.text.LCD_DrawPoint) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+	Obj/LCD_lcd.o(.text.LCD_ShowChar) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+	Obj/LCD_lcd_init.o(.text.LCD_Address_Set) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+	Obj/LCD_lcd_init.o(.text.LCD_Address_Set) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
+	Obj/LCD_lcd_init.o(.text.LCD_Init) refers to Obj/LCD_lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
+	Obj/LCD_lcd.o(.text.LCD_Fill) refers to Obj/LCD_lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+	Obj/LCD_lcd.o(.text.LCD_DrawPoint) refers to Obj/LCD_lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+	Obj/LCD_lcd.o(.text.LCD_ShowChar) refers to Obj/LCD_lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+	Obj/main.o(.text.startup.main) refers to Obj/LCD_lcd_init.o(.text.LCD_Init) for LCD_Init
+	FWlib_apt32f102_tkey.o(.text.CORETHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_result_prog) for TK_result_prog
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.get_key_seq) for get_key_seq
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.CORET_CONFIG) for CORET_CONFIG
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.tk_chxval_seqxcon_clr) for tk_chxval_seqxcon_clr
+	Obj/apt32f102a_initial.o(.text.APT32F102_init) refers to FWlib_apt32f102_tkey.o(.text.tk_init) for tk_init
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.tk_clk_config) for tk_clk_config
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.TK_con0_config) for TK_con0_config
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.TK_IO_Enable) for TK_IO_Enable
+	FWlib_apt32f102_tkey.o(.text.TKEYIntHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_Sampling_prog) for TK_Sampling_prog
+	FWlib_apt32f102_tkey.o(.text.TK_result_prog) refers to FWlib_apt32f102_tkey.o(.text.get_key_number) for get_key_number
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to FWlib_apt32f102_tkey.o(.text.TK_Baseline_prog) for TK_Baseline_prog
+	FWlib_apt32f102_tkey.o(.text.CORETHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_Scan_Start) for TK_Scan_Start
+	FWlib_apt32f102_tkey.o(.text.CORETHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_Keymap_prog) for TK_Keymap_prog
+	FWlib_apt32f102_tkey.o(.text.CORETHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_overflow_predict) for TK_overflow_predict
+	FWlib_apt32f102_tkey.o(.text.CORETHandler) refers to FWlib_apt32f102_tkey.o(.text.TK_Baseline_tracking) for TK_Baseline_tracking
+	Obj/apt32f102a_initial.o(.text.SYSCON_CONFIG) refers to FWlib_apt32f102_clkcalib.o(.text.std_clk_calib) for std_clk_calib
+	FWlib_apt32f102_tkey.o(.text.TK_overflow_predict) refers to pow.o(.text) for pow
+	pow.o(.text) refers to fabs.o(.text) for fabs
+	pow.o(.text) refers to scalbn.o(.text) for scalbn
+	pow.o(.text) refers to sqrt.o(.text) for sqrt
+	Obj/FWlib_apt32f102a_adc.o(.text.ADC12_ConversionChannel_Config) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	Obj/FWlib_apt32f102a_gpio.o(.text.GPIO_Init) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	Obj/User_analog.o(.text.adc_conver) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	Obj/User_logic.o(.text.cal_comput) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	Obj/User_gui.o(.text.gui_calibration) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	FWlib_apt32f102_tkey.o(.text.TK_IO_Enable) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	FWlib_apt32f102_tkey.o(.text.tk_init) refers to _csky_case_uqi.o(.text) for ___gnu_csky_case_uqi
+	Obj/User_gui.o(.text.gui_calibration) refers to _csky_case_uhi.o(.text) for ___gnu_csky_case_uhi
+	Obj/User_analog.o(.text.adc_conver) refers to _fixunssfsi.o(.text) for __fixunssfsi
+	FWlib_apt32f102_tkey.o(.text.TK_overflow_predict) refers to _fixunsdfsi.o(.text) for __fixunsdfsi
+	Obj/User_analog.o(.text.adc_conver) refers to _addsub_sf.o(.text) for __addsf3
+	_fixunssfsi.o(.text) refers to _addsub_sf.o(.text) for __subsf3
+	Obj/User_logic.o(.text.cal_comput) refers to _addsub_sf.o(.text) for __subsf3
+	Obj/User_analog.o(.text.adc_conver) refers to _mul_sf.o(.text) for __mulsf3
+	Obj/User_logic.o(.text.cal_comput) refers to _mul_sf.o(.text) for __mulsf3
+	_fixunssfsi.o(.text) refers to _ge_sf.o(.text) for __gesf2
+	Obj/User_analog.o(.text.adc_conver) refers to _ge_sf.o(.text) for __gesf2
+	Obj/User_analog.o(.text.adc_conver) refers to _si_to_sf.o(.text) for __floatsisf
+	Obj/User_logic.o(.text.cal_comput) refers to _si_to_sf.o(.text) for __floatsisf
+	_fixunssfsi.o(.text) refers to _sf_to_si.o(.text) for __fixsfsi
+	pow.o(.text) refers to _addsub_df.o(.text) for __adddf3
+	sqrt.o(.text) refers to _addsub_df.o(.text) for __adddf3
+	pow.o(.text) refers to _addsub_df.o(.text) for __subdf3
+	sqrt.o(.text) refers to _addsub_df.o(.text) for __subdf3
+	_fixunsdfsi.o(.text) refers to _addsub_df.o(.text) for __subdf3
+	pow.o(.text) refers to _mul_df.o(.text) for __muldf3
+	sqrt.o(.text) refers to _mul_df.o(.text) for __muldf3
+	pow.o(.text) refers to _div_df.o(.text) for __divdf3
+	sqrt.o(.text) refers to _div_df.o(.text) for __divdf3
+	Obj/User_logic.o(.text.cal_comput) refers to _div_df.o(.text) for __divdf3
+	pow.o(.text) refers to _gt_df.o(.text) for __gtdf2
+	_fixunsdfsi.o(.text) refers to _ge_df.o(.text) for __gedf2
+	pow.o(.text) refers to _le_df.o(.text) for __ledf2
+	pow.o(.text) refers to _si_to_df.o(.text) for __floatsidf
+	Obj/User_logic.o(.text.cal_comput) refers to _si_to_df.o(.text) for __floatsidf
+	_fixunsdfsi.o(.text) refers to _df_to_si.o(.text) for __fixdfsi
+	Obj/User_logic.o(.text.cal_comput) refers to _df_to_sf.o(.text) for __truncdfsf2
+	FWlib_apt32f102_tkey.o(.text.TK_overflow_predict) refers to _usi_to_df.o(.text) for __floatunsidf
+	_mul_sf.o(.text) refers to _muldi3.o(.text) for __muldi3
+	_mul_df.o(.text) refers to _muldi3.o(.text) for __muldi3
+	_si_to_sf.o(.text) refers to _clzsi2.o(.text) for __clzsi2
+	_si_to_df.o(.text) refers to _clzsi2.o(.text) for __clzsi2
+	_usi_to_df.o(.text) refers to _clzsi2.o(.text) for __clzsi2
+	_addsub_sf.o(.text) refers to _pack_sf.o(.text) for __pack_f
+	_addsub_sf.o(.text) refers to _pack_sf.o(.text) for __pack_f
+	_mul_sf.o(.text) refers to _pack_sf.o(.text) for __pack_f
+	_si_to_sf.o(.text) refers to _pack_sf.o(.text) for __pack_f
+	_make_sf.o(.text) refers to _pack_sf.o(.text) for __pack_f
+	_addsub_sf.o(.text) refers to _unpack_sf.o(.text) for __unpack_f
+	_addsub_sf.o(.text) refers to _unpack_sf.o(.text) for __unpack_f
+	_mul_sf.o(.text) refers to _unpack_sf.o(.text) for __unpack_f
+	_ge_sf.o(.text) refers to _unpack_sf.o(.text) for __unpack_f
+	_sf_to_si.o(.text) refers to _unpack_sf.o(.text) for __unpack_f
+	_ge_sf.o(.text) refers to _fpcmp_parts_sf.o(.text) for __fpcmp_parts_f
+	_df_to_sf.o(.text) refers to _make_sf.o(.text) for __make_fp
+	_addsub_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_addsub_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_mul_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_div_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_si_to_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_usi_to_df.o(.text) refers to _pack_df.o(.text) for __pack_d
+	_addsub_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_addsub_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_mul_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_div_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_gt_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_ge_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_le_df.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_df_to_si.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_df_to_sf.o(.text) refers to _unpack_df.o(.text) for __unpack_d
+	_gt_df.o(.text) refers to _fpcmp_parts_df.o(.text) for __fpcmp_parts_d
+	_ge_df.o(.text) refers to _fpcmp_parts_df.o(.text) for __fpcmp_parts_d
+	_le_df.o(.text) refers to _fpcmp_parts_df.o(.text) for __fpcmp_parts_d
+	Obj/arch_mem_init.o(.text.__main) refers to memset_fast.o(.text) for memset
+	Obj/arch_mem_init.o(.text.__main) refers to memcpy_fast.o(.text) for memcpy
+
+
+======================================================================
+
+Removing Unused input sections from the image. 
+
+	Removing .data(Obj/arch_crt0.o), (4 bytes).
+	Removing .bss(Obj/arch_crt0.o), (0 bytes).
+	Removing .text(Obj/arch_mem_init.o), (0 bytes).
+	Removing .data(Obj/arch_mem_init.o), (0 bytes).
+	Removing .bss(Obj/arch_mem_init.o), (0 bytes).
+	Removing .text(Obj/arch_apt32f102a_iostring.o), (0 bytes).
+	Removing .data(Obj/arch_apt32f102a_iostring.o), (0 bytes).
+	Removing .bss(Obj/arch_apt32f102a_iostring.o), (0 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_adc.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_adc.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_adc.o), (0 bytes).
+	Removing .text.ADC12_RESET_VALUE(Obj/FWlib_apt32f102a_adc.o), (100 bytes).
+	Removing .text.ADC12_ConfigInterrupt_CMD(Obj/FWlib_apt32f102a_adc.o), (32 bytes).
+	Removing .text.ADC12_Read_IntEnStatus(Obj/FWlib_apt32f102a_adc.o), (20 bytes).
+	Removing .text.ADC12_EOC_wait(Obj/FWlib_apt32f102a_adc.o), (20 bytes).
+	Removing .text.ADC12_DATA_OUPUT(Obj/FWlib_apt32f102a_adc.o), (20 bytes).
+	Removing .text.ADC12_CompareFunction_set(Obj/FWlib_apt32f102a_adc.o), (32 bytes).
+	Removing .text.ADC12_Compare_statue(Obj/FWlib_apt32f102a_adc.o), (44 bytes).
+	Removing .text.ADC_Int_Enable(Obj/FWlib_apt32f102a_adc.o), (28 bytes).
+	Removing .text.ADC_Int_Disable(Obj/FWlib_apt32f102a_adc.o), (12 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_bt.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_bt.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_bt.o), (0 bytes).
+	Removing .text.BT_IO_Init(Obj/FWlib_apt32f102a_bt.o), (332 bytes).
+	Removing .text.BT_Stop(Obj/FWlib_apt32f102a_bt.o), (8 bytes).
+	Removing .text.BT_Stop_High(Obj/FWlib_apt32f102a_bt.o), (14 bytes).
+	Removing .text.BT_Stop_Low(Obj/FWlib_apt32f102a_bt.o), (14 bytes).
+	Removing .text.BT_CNT_Write(Obj/FWlib_apt32f102a_bt.o), (4 bytes).
+	Removing .text.BT_PRDR_Read(Obj/FWlib_apt32f102a_bt.o), (6 bytes).
+	Removing .text.BT_CMP_Read(Obj/FWlib_apt32f102a_bt.o), (6 bytes).
+	Removing .text.BT_CNT_Read(Obj/FWlib_apt32f102a_bt.o), (6 bytes).
+	Removing .text.BT_Trigger_Configure(Obj/FWlib_apt32f102a_bt.o), (10 bytes).
+	Removing .text.BT_Soft_Tigger(Obj/FWlib_apt32f102a_bt.o), (6 bytes).
+	Removing .text.BT0_INT_DISABLE(Obj/FWlib_apt32f102a_bt.o), (16 bytes).
+	Removing .text.BT1_INT_ENABLE(Obj/FWlib_apt32f102a_bt.o), (16 bytes).
+	Removing .text.BT1_INT_DISABLE(Obj/FWlib_apt32f102a_bt.o), (16 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_coret.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_coret.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_coret.o), (0 bytes).
+	Removing .text.CORET_Int_Disable(Obj/FWlib_apt32f102a_coret.o), (12 bytes).
+	Removing .text.CORET_WakeUp_Enable(Obj/FWlib_apt32f102a_coret.o), (12 bytes).
+	Removing .text.CORET_WakeUp_Disable(Obj/FWlib_apt32f102a_coret.o), (12 bytes).
+	Removing .text.CORET_stop(Obj/FWlib_apt32f102a_coret.o), (16 bytes).
+	Removing .text.CORET_CLKSOURCE_IN(Obj/FWlib_apt32f102a_coret.o), (16 bytes).
+	Removing .text.CORET_TICKINT_Disable(Obj/FWlib_apt32f102a_coret.o), (16 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_countera.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_countera.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_countera.o), (0 bytes).
+	Removing .text.COUNT_DeInit(Obj/FWlib_apt32f102a_countera.o), (20 bytes).
+	Removing .text.COUNTA_Int_Enable(Obj/FWlib_apt32f102a_countera.o), (16 bytes).
+	Removing .text.COUNTA_Int_Disable(Obj/FWlib_apt32f102a_countera.o), (16 bytes).
+	Removing .text.COUNTA_Wakeup_Enable(Obj/FWlib_apt32f102a_countera.o), (16 bytes).
+	Removing .text.COUNTA_Wakeup_Disable(Obj/FWlib_apt32f102a_countera.o), (16 bytes).
+	Removing .text.COUNTA_Init(Obj/FWlib_apt32f102a_countera.o), (60 bytes).
+	Removing .text.COUNTA_Config(Obj/FWlib_apt32f102a_countera.o), (32 bytes).
+	Removing .text.COUNTA_Start(Obj/FWlib_apt32f102a_countera.o), (20 bytes).
+	Removing .text.COUNTA_Stop(Obj/FWlib_apt32f102a_countera.o), (16 bytes).
+	Removing .text.COUNTA_Data_Update(Obj/FWlib_apt32f102a_countera.o), (20 bytes).
+	Removing .text.COUNTA_IO_Init(Obj/FWlib_apt32f102a_countera.o), (80 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_countera.o), (7799 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_countera.o), (381 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_countera.o), (336 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_countera.o), (112 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_countera.o), (96 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_countera.o), (354 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_countera.o), (3403 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_countera.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_countera.o), (224 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_countera.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_crc.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_crc.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_crc.o), (0 bytes).
+	Removing .text.CRC_CMD(Obj/FWlib_apt32f102a_crc.o), (24 bytes).
+	Removing .text.CRC_Soft_Reset(Obj/FWlib_apt32f102a_crc.o), (16 bytes).
+	Removing .text.CRC_Configure(Obj/FWlib_apt32f102a_crc.o), (36 bytes).
+	Removing .text.CRC_Seed_Write(Obj/FWlib_apt32f102a_crc.o), (12 bytes).
+	Removing .text.CRC_Seed_Read(Obj/FWlib_apt32f102a_crc.o), (12 bytes).
+	Removing .text.CRC_Datain(Obj/FWlib_apt32f102a_crc.o), (12 bytes).
+	Removing .text.CRC_Result_Read(Obj/FWlib_apt32f102a_crc.o), (12 bytes).
+	Removing .text.Chip_CRC_CRC32(Obj/FWlib_apt32f102a_crc.o), (28 bytes).
+	Removing .text.Chip_CRC_CRC16(Obj/FWlib_apt32f102a_crc.o), (52 bytes).
+	Removing .text.Chip_CRC_CRC8(Obj/FWlib_apt32f102a_crc.o), (44 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_crc.o), (7732 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_crc.o), (592 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_crc.o), (358 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_crc.o), (104 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_crc.o), (112 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_crc.o), (354 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_crc.o), (3086 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_crc.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_crc.o), (204 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_crc.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_ept.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_ept.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_ept.o), (0 bytes).
+	Removing .text.EPT_Software_Prg(Obj/FWlib_apt32f102a_ept.o), (32 bytes).
+	Removing .text.EPT_Start(Obj/FWlib_apt32f102a_ept.o), (40 bytes).
+	Removing .text.EPT_Stop(Obj/FWlib_apt32f102a_ept.o), (40 bytes).
+	Removing .text.EPT_IO_SET(Obj/FWlib_apt32f102a_ept.o), (568 bytes).
+	Removing .text.EPT_PWM_Config(Obj/FWlib_apt32f102a_ept.o), (56 bytes).
+	Removing .text.EPT_CG_gate_Config(Obj/FWlib_apt32f102a_ept.o), (116 bytes).
+	Removing .text.EPT_Capture_Config(Obj/FWlib_apt32f102a_ept.o), (104 bytes).
+	Removing .text.EPT_SYNCR_Config(Obj/FWlib_apt32f102a_ept.o), (52 bytes).
+	Removing .text.EPT_CPCR_Config(Obj/FWlib_apt32f102a_ept.o), (80 bytes).
+	Removing .text.EPT_DBCR_Config(Obj/FWlib_apt32f102a_ept.o), (96 bytes).
+	Removing .text.EPT_DB_CLK_Config(Obj/FWlib_apt32f102a_ept.o), (16 bytes).
+	Removing .text.EPT_PWMX_Output_Control(Obj/FWlib_apt32f102a_ept.o), (216 bytes).
+	Removing .text.EPT_Tevent_Selecte(Obj/FWlib_apt32f102a_ept.o), (16 bytes).
+	Removing .text.EPT_PHSEN_Config(Obj/FWlib_apt32f102a_ept.o), (24 bytes).
+	Removing .text.EPT_PRDR_CMPA_CMPB_CMPC_CMPD_Config(Obj/FWlib_apt32f102a_ept.o), (28 bytes).
+	Removing .text.EPT_SYNCR_RearmClr(Obj/FWlib_apt32f102a_ept.o), (40 bytes).
+	Removing .text.EPT_Caputure_Rearm(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_Globle_Eventload_Config(Obj/FWlib_apt32f102a_ept.o), (24 bytes).
+	Removing .text.EPT_Globle_SwLoad_CMD(Obj/FWlib_apt32f102a_ept.o), (28 bytes).
+	Removing .text.EPT_PRDR_EventLoad_Config(Obj/FWlib_apt32f102a_ept.o), (28 bytes).
+	Removing .text.EPT_CMP_EventLoad_Config(Obj/FWlib_apt32f102a_ept.o), (68 bytes).
+	Removing .text.EPT_AQCR_Eventload_Config(Obj/FWlib_apt32f102a_ept.o), (72 bytes).
+	Removing .text.EPT_DB_Eventload_Config(Obj/FWlib_apt32f102a_ept.o), (72 bytes).
+	Removing .text.EPT_TRGSRCX_Config(Obj/FWlib_apt32f102a_ept.o), (136 bytes).
+	Removing .text.EPT_TRGSRCX_SWFTRG(Obj/FWlib_apt32f102a_ept.o), (72 bytes).
+	Removing .text.EPT_Int_Enable(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_Int_Disable(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_EMInt_Enable(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_EMInt_Disable(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_Vector_Int_Enable(Obj/FWlib_apt32f102a_ept.o), (12 bytes).
+	Removing .text.EPT_Vector_Int_Disable(Obj/FWlib_apt32f102a_ept.o), (12 bytes).
+	Removing .text.EPT_EPX_Config(Obj/FWlib_apt32f102a_ept.o), (176 bytes).
+	Removing .text.EPT_EPIX_POL_Config(Obj/FWlib_apt32f102a_ept.o), (24 bytes).
+	Removing .text.EPT_LKCR_TRG_Config(Obj/FWlib_apt32f102a_ept.o), (120 bytes).
+	Removing .text.EPT_SHLOCK_OUTPUT_Config(Obj/FWlib_apt32f102a_ept.o), (28 bytes).
+	Removing .text.EPT_SLock_CLR(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_HLock_CLR(Obj/FWlib_apt32f102a_ept.o), (20 bytes).
+	Removing .text.EPT_SW_Set_lock(Obj/FWlib_apt32f102a_ept.o), (28 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_ept.o), (12790 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_ept.o), (494 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_ept.o), (2467 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_ept.o), (328 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_ept.o), (312 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_ept.o), (1189 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_ept.o), (12423 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_ept.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_ept.o), (784 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_ept.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_et.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_et.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_et.o), (0 bytes).
+	Removing .text.ET_DeInit(Obj/FWlib_apt32f102a_et.o), (40 bytes).
+	Removing .text.ET_ENABLE(Obj/FWlib_apt32f102a_et.o), (16 bytes).
+	Removing .text.ET_DISABLE(Obj/FWlib_apt32f102a_et.o), (16 bytes).
+	Removing .text.ET_SWTRG_CMD(Obj/FWlib_apt32f102a_et.o), (28 bytes).
+	Removing .text.ET_CH0_SRCSEL(Obj/FWlib_apt32f102a_et.o), (108 bytes).
+	Removing .text.ET_CH0_CONTROL(Obj/FWlib_apt32f102a_et.o), (40 bytes).
+	Removing .text.ET_CH1_SRCSEL(Obj/FWlib_apt32f102a_et.o), (108 bytes).
+	Removing .text.ET_CH1_CONTROL(Obj/FWlib_apt32f102a_et.o), (40 bytes).
+	Removing .text.ET_CH2_SRCSEL(Obj/FWlib_apt32f102a_et.o), (108 bytes).
+	Removing .text.ET_CH2_CONTROL(Obj/FWlib_apt32f102a_et.o), (40 bytes).
+	Removing .text.ET_CHx_CONTROL(Obj/FWlib_apt32f102a_et.o), (276 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_et.o), (7781 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_et.o), (410 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_et.o), (1318 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_et.o), (112 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_et.o), (96 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_et.o), (467 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_et.o), (3148 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_et.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_et.o), (204 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_et.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_gpio.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_gpio.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_gpio.o), (0 bytes).
+	Removing .text.GPIO_DeInit(Obj/FWlib_apt32f102a_gpio.o), (100 bytes).
+	Removing .text.GPIO_Init2(Obj/FWlib_apt32f102a_gpio.o), (16 bytes).
+	Removing .text.GPIO_InPutOutPut_Disable(Obj/FWlib_apt32f102a_gpio.o), (164 bytes).
+	Removing .text.GPIO_MODE_Init(Obj/FWlib_apt32f102a_gpio.o), (34 bytes).
+	Removing .text.GPIO_PullHigh_Init(Obj/FWlib_apt32f102a_gpio.o), (20 bytes).
+	Removing .text.GPIO_PullLow_Init(Obj/FWlib_apt32f102a_gpio.o), (20 bytes).
+	Removing .text.GPIO_PullHighLow_DIS(Obj/FWlib_apt32f102a_gpio.o), (14 bytes).
+	Removing .text.GPIO_OpenDrain_EN(Obj/FWlib_apt32f102a_gpio.o), (12 bytes).
+	Removing .text.GPIO_OpenDrain_DIS(Obj/FWlib_apt32f102a_gpio.o), (14 bytes).
+	Removing .text.GPIO_TTL_COSM_Selecte(Obj/FWlib_apt32f102a_gpio.o), (72 bytes).
+	Removing .text.GPIO_DriveStrength_EN(Obj/FWlib_apt32f102a_gpio.o), (14 bytes).
+	Removing .text.GPIO_DriveStrength_DIS(Obj/FWlib_apt32f102a_gpio.o), (16 bytes).
+	Removing .text.GPIO_IntGroup_Set(Obj/FWlib_apt32f102a_gpio.o), (268 bytes).
+	Removing .text.GPIOA0_EXI_Init(Obj/FWlib_apt32f102a_gpio.o), (252 bytes).
+	Removing .text.GPIOB0_EXI_Init(Obj/FWlib_apt32f102a_gpio.o), (108 bytes).
+	Removing .text.GPIO_EXI_EN(Obj/FWlib_apt32f102a_gpio.o), (12 bytes).
+	Removing .text.GPIO_Set_Value(Obj/FWlib_apt32f102a_gpio.o), (22 bytes).
+	Removing .text.GPIO_Reverse(Obj/FWlib_apt32f102a_gpio.o), (22 bytes).
+	Removing .text.GPIO_Read_Status(Obj/FWlib_apt32f102a_gpio.o), (16 bytes).
+	Removing .text.GPIO_Read_Output(Obj/FWlib_apt32f102a_gpio.o), (16 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_gpt.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_gpt.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_gpt.o), (0 bytes).
+	Removing .text.GPT_DeInit(Obj/FWlib_apt32f102a_gpt.o), (96 bytes).
+	Removing .text.GPT_IO_Init(Obj/FWlib_apt32f102a_gpt.o), (160 bytes).
+	Removing .text.GPT_Configure(Obj/FWlib_apt32f102a_gpt.o), (20 bytes).
+	Removing .text.GPT_WaveCtrl_Configure(Obj/FWlib_apt32f102a_gpt.o), (68 bytes).
+	Removing .text.GPT_WaveLoad_Configure(Obj/FWlib_apt32f102a_gpt.o), (20 bytes).
+	Removing .text.GPT_WaveOut_Configure(Obj/FWlib_apt32f102a_gpt.o), (180 bytes).
+	Removing .text.GPT_Capture_Config(Obj/FWlib_apt32f102a_gpt.o), (68 bytes).
+	Removing .text.GPT_SyncSet_Configure(Obj/FWlib_apt32f102a_gpt.o), (36 bytes).
+	Removing .text.GPT_Trigger_Configure(Obj/FWlib_apt32f102a_gpt.o), (44 bytes).
+	Removing .text.GPT_EVTRG_Configure(Obj/FWlib_apt32f102a_gpt.o), (92 bytes).
+	Removing .text.GPT_OneceForce_Out(Obj/FWlib_apt32f102a_gpt.o), (32 bytes).
+	Removing .text.GPT_Force_Out(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_CmpLoad_Configure(Obj/FWlib_apt32f102a_gpt.o), (20 bytes).
+	Removing .text.GPT_Debug_Mode(Obj/FWlib_apt32f102a_gpt.o), (24 bytes).
+	Removing .text.GPT_Start(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_Stop(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_Soft_Reset(Obj/FWlib_apt32f102a_gpt.o), (20 bytes).
+	Removing .text.GPT_Cap_Rearm(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_Mode_CMD(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_REARM_Write(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_REARM_Read(Obj/FWlib_apt32f102a_gpt.o), (20 bytes).
+	Removing .text.GPT_Period_CMP_Write(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_PRDR_Read(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_CMPA_Read(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_CMPB_Read(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_CNT_Read(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_ConfigInterrupt_CMD(Obj/FWlib_apt32f102a_gpt.o), (28 bytes).
+	Removing .text.GPT_INT_ENABLE(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .text.GPT_INT_DISABLE(Obj/FWlib_apt32f102a_gpt.o), (16 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_gpt.o), (11442 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_gpt.o), (562 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_gpt.o), (2212 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_gpt.o), (256 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_gpt.o), (240 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_gpt.o), (758 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_gpt.o), (8011 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_gpt.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_gpt.o), (616 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_gpt.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_i2c.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_i2c.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_i2c.o), (6 bytes).
+	Removing .text.I2C_DeInit(Obj/FWlib_apt32f102a_i2c.o), (24 bytes).
+	Removing .text.I2C_Master_CONFIG(Obj/FWlib_apt32f102a_i2c.o), (320 bytes).
+	Removing .text.I2C_Slave_CONFIG(Obj/FWlib_apt32f102a_i2c.o), (332 bytes).
+	Removing .text.I2C_SDA_TSETUP_THOLD_CONFIG(Obj/FWlib_apt32f102a_i2c.o), (20 bytes).
+	Removing .text.I2C_ConfigInterrupt_CMD(Obj/FWlib_apt32f102a_i2c.o), (28 bytes).
+	Removing .text.I2C_FIFO_TriggerData(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_Stop(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_Enable(Obj/FWlib_apt32f102a_i2c.o), (28 bytes).
+	Removing .text.I2C_Disable(Obj/FWlib_apt32f102a_i2c.o), (28 bytes).
+	Removing .text.I2C_Abort_EN(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_Abort_Status(Obj/FWlib_apt32f102a_i2c.o), (20 bytes).
+	Removing .text.I2C_SDA_Recover_EN(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_SDA_Recover_DIS(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_Int_Enable(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_Int_Disable(Obj/FWlib_apt32f102a_i2c.o), (16 bytes).
+	Removing .text.I2C_WRITE_Byte(Obj/FWlib_apt32f102a_i2c.o), (112 bytes).
+	Removing .text.I2C_WRITE_nByte(Obj/FWlib_apt32f102a_i2c.o), (160 bytes).
+	Removing .text.I2C_READ_Byte(Obj/FWlib_apt32f102a_i2c.o), (100 bytes).
+	Removing .text.I2C_READ_nByte(Obj/FWlib_apt32f102a_i2c.o), (160 bytes).
+	Removing .text.I2C_Slave_Receive(Obj/FWlib_apt32f102a_i2c.o), (384 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_i2c.o), (8426 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_i2c.o), (576 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_i2c.o), (1150 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_i2c.o), (184 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_i2c.o), (168 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_i2c.o), (851 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_i2c.o), (3635 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_i2c.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_i2c.o), (452 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_i2c.o), (32 bytes).
+	Removing COMMON(Obj/FWlib_apt32f102a_i2c.o), (70 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_ifc.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_ifc.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_ifc.o), (1 bytes).
+	Removing .text.ChipErase(Obj/FWlib_apt32f102a_ifc.o), (36 bytes).
+	Removing .text.PageErase(Obj/FWlib_apt32f102a_ifc.o), (36 bytes).
+	Removing .text.Page_ProgramData_int(Obj/FWlib_apt32f102a_ifc.o), (156 bytes).
+	Removing .text.Page_ProgramData_U32(Obj/FWlib_apt32f102a_ifc.o), (124 bytes).
+	Removing .text.ReadDataArry_U8(Obj/FWlib_apt32f102a_ifc.o), (42 bytes).
+	Removing .text.ReadDataArry_U32(Obj/FWlib_apt32f102a_ifc.o), (22 bytes).
+	Removing .text.IFC_interrupt_CMD(Obj/FWlib_apt32f102a_ifc.o), (28 bytes).
+	Removing .text.IFC_Int_Enable(Obj/FWlib_apt32f102a_ifc.o), (28 bytes).
+	Removing .text.IFC_Int_Disable(Obj/FWlib_apt32f102a_ifc.o), (12 bytes).
+	Removing COMMON(Obj/FWlib_apt32f102a_ifc.o), (4 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_lpt.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_lpt.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_lpt.o), (0 bytes).
+	Removing .text.LPT_DeInit(Obj/FWlib_apt32f102a_lpt.o), (60 bytes).
+	Removing .text.LPT_IO_Init(Obj/FWlib_apt32f102a_lpt.o), (72 bytes).
+	Removing .text.LPT_Configure(Obj/FWlib_apt32f102a_lpt.o), (44 bytes).
+	Removing .text.LPT_Debug_Mode(Obj/FWlib_apt32f102a_lpt.o), (24 bytes).
+	Removing .text.LPT_Period_CMP_Write(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_CNT_Write(Obj/FWlib_apt32f102a_lpt.o), (12 bytes).
+	Removing .text.LPT_PRDR_Read(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_CMP_Read(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_CNT_Read(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_ControlSet_Configure(Obj/FWlib_apt32f102a_lpt.o), (40 bytes).
+	Removing .text.LPT_SyncSet_Configure(Obj/FWlib_apt32f102a_lpt.o), (24 bytes).
+	Removing .text.LPT_Trigger_Configure(Obj/FWlib_apt32f102a_lpt.o), (72 bytes).
+	Removing .text.LPT_Trigger_EVPS(Obj/FWlib_apt32f102a_lpt.o), (20 bytes).
+	Removing .text.LPT_Trigger_Cnt(Obj/FWlib_apt32f102a_lpt.o), (20 bytes).
+	Removing .text.LPT_Soft_Trigger(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_Start(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_Stop(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_REARM_Write(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_REARM_Read(Obj/FWlib_apt32f102a_lpt.o), (20 bytes).
+	Removing .text.LPT_ConfigInterrupt_CMD(Obj/FWlib_apt32f102a_lpt.o), (28 bytes).
+	Removing .text.LPT_INT_ENABLE(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text.LPT_INT_DISABLE(Obj/FWlib_apt32f102a_lpt.o), (16 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_rtc.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_rtc.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_rtc.o), (0 bytes).
+	Removing .text.RTC_RST_VALUE(Obj/FWlib_apt32f102a_rtc.o), (40 bytes).
+	Removing .text.RTC_ALM_IO_SET(Obj/FWlib_apt32f102a_rtc.o), (64 bytes).
+	Removing .text.RTCCLK_CONFIG(Obj/FWlib_apt32f102a_rtc.o), (72 bytes).
+	Removing .text.RTC_Function_Config(Obj/FWlib_apt32f102a_rtc.o), (44 bytes).
+	Removing .text.RTC_Start(Obj/FWlib_apt32f102a_rtc.o), (44 bytes).
+	Removing .text.RTC_Stop(Obj/FWlib_apt32f102a_rtc.o), (44 bytes).
+	Removing .text.RTC_TIMR_DATR_SET(Obj/FWlib_apt32f102a_rtc.o), (68 bytes).
+	Removing .text.RTC_TIMR_DATR_Read(Obj/FWlib_apt32f102a_rtc.o), (84 bytes).
+	Removing .text.RTC_Alarm_TIMR_DATR_SET(Obj/FWlib_apt32f102a_rtc.o), (172 bytes).
+	Removing .text.RTC_AlarmA_TIMR_DATR_Read(Obj/FWlib_apt32f102a_rtc.o), (60 bytes).
+	Removing .text.RTC_AlarmB_TIMR_DATR_Read(Obj/FWlib_apt32f102a_rtc.o), (60 bytes).
+	Removing .text.RTC_TRGSRC0_Config(Obj/FWlib_apt32f102a_rtc.o), (40 bytes).
+	Removing .text.RTC_TRGSRC1_Config(Obj/FWlib_apt32f102a_rtc.o), (40 bytes).
+	Removing .text.RTC_TRGSRC0_SWFTRG(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_TRGSRC1_SWFTRG(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_Int_Enable(Obj/FWlib_apt32f102a_rtc.o), (20 bytes).
+	Removing .text.RTC_Int_Disable(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_Vector_Int_Enable(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_Vector_Int_Disable(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_WakeUp_Enable(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .text.RTC_WakeUp_Disable(Obj/FWlib_apt32f102a_rtc.o), (16 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_rtc.o), (8815 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_rtc.o), (494 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_rtc.o), (535 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_rtc.o), (192 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_rtc.o), (176 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_rtc.o), (610 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_rtc.o), (4835 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_rtc.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_rtc.o), (428 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_rtc.o), (32 bytes).
+	Removing COMMON(Obj/FWlib_apt32f102a_rtc.o), (15 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_sio.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_sio.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_sio.o), (0 bytes).
+	Removing .text.SIO_DeInit(Obj/FWlib_apt32f102a_sio.o), (32 bytes).
+	Removing .text.SIO_IO_Init(Obj/FWlib_apt32f102a_sio.o), (96 bytes).
+	Removing .text.SIO_TX_Init(Obj/FWlib_apt32f102a_sio.o), (16 bytes).
+	Removing .text.SIO_TX_Configure(Obj/FWlib_apt32f102a_sio.o), (80 bytes).
+	Removing .text.SIO_TXBUF_Set(Obj/FWlib_apt32f102a_sio.o), (156 bytes).
+	Removing .text.SIO_RX_Init(Obj/FWlib_apt32f102a_sio.o), (20 bytes).
+	Removing .text.SIO_RX_Configure0(Obj/FWlib_apt32f102a_sio.o), (96 bytes).
+	Removing .text.SIO_RX_Configure1(Obj/FWlib_apt32f102a_sio.o), (32 bytes).
+	Removing .text.SIO_ConfigInterrupt_CMD(Obj/FWlib_apt32f102a_sio.o), (28 bytes).
+	Removing .text.SIO_INT_ENABLE(Obj/FWlib_apt32f102a_sio.o), (16 bytes).
+	Removing .text.SIO_INT_DISABLE(Obj/FWlib_apt32f102a_sio.o), (16 bytes).
+	Removing .debug_info(Obj/FWlib_apt32f102a_sio.o), (8669 bytes).
+	Removing .debug_abbrev(Obj/FWlib_apt32f102a_sio.o), (405 bytes).
+	Removing .debug_loc(Obj/FWlib_apt32f102a_sio.o), (1996 bytes).
+	Removing .debug_aranges(Obj/FWlib_apt32f102a_sio.o), (112 bytes).
+	Removing .debug_ranges(Obj/FWlib_apt32f102a_sio.o), (96 bytes).
+	Removing .debug_line(Obj/FWlib_apt32f102a_sio.o), (395 bytes).
+	Removing .debug_str(Obj/FWlib_apt32f102a_sio.o), (4116 bytes).
+	Removing .comment(Obj/FWlib_apt32f102a_sio.o), (67 bytes).
+	Removing .debug_frame(Obj/FWlib_apt32f102a_sio.o), (260 bytes).
+	Removing .csky.attributes(Obj/FWlib_apt32f102a_sio.o), (32 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_spi.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_spi.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_spi.o), (0 bytes).
+	Removing .text.SPI_Slave_Init(Obj/FWlib_apt32f102a_spi.o), (156 bytes).
+	Removing .text.SPI_WRITE_BYTE(Obj/FWlib_apt32f102a_spi.o), (32 bytes).
+	Removing .text.SPI_READ_BYTE(Obj/FWlib_apt32f102a_spi.o), (100 bytes).
+	Removing .text.SPI_Int_Disable(Obj/FWlib_apt32f102a_spi.o), (16 bytes).
+	Removing .text.SPI_Wakeup_Enable(Obj/FWlib_apt32f102a_spi.o), (16 bytes).
+	Removing .text.SPI_Wakeup_Disable(Obj/FWlib_apt32f102a_spi.o), (16 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_syscon.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_syscon.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_syscon.o), (0 bytes).
+	Removing .text.EMOSC_OSTR_Config(Obj/FWlib_apt32f102a_syscon.o), (28 bytes).
+	Removing .text.SystemCLK_Clear(Obj/FWlib_apt32f102a_syscon.o), (24 bytes).
+	Removing .text.SYSCON_IMOSC_SELECTE(Obj/FWlib_apt32f102a_syscon.o), (20 bytes).
+	Removing .text.LVD_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.IWDT_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (28 bytes).
+	Removing .text.IWDT_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.Read_Reset_Status(Obj/FWlib_apt32f102a_syscon.o), (24 bytes).
+	Removing .text.EXTI_interrupt_CMD(Obj/FWlib_apt32f102a_syscon.o), (52 bytes).
+	Removing .text.GPIO_EXTI_interrupt(Obj/FWlib_apt32f102a_syscon.o), (4 bytes).
+	Removing .text.PCLK_goto_idle_mode(Obj/FWlib_apt32f102a_syscon.o), (6 bytes).
+	Removing .text.PCLK_goto_deepsleep_mode(Obj/FWlib_apt32f102a_syscon.o), (20 bytes).
+	Removing .text.EXI0_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.EXI0_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.EXI1_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI1_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI2_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI2_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI3_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI3_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI4_Int_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI4_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI0_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.EXI0_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.EXI1_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI1_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI2_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI2_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI3_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI3_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI4_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.EXI4_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.SYSCON_Int_Disable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.SYSCON_WakeUp_Enable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.SYSCON_CLO_CONFIG(Obj/FWlib_apt32f102a_syscon.o), (52 bytes).
+	Removing .text.SYSCON_CLO_SRC_SET(Obj/FWlib_apt32f102a_syscon.o), (32 bytes).
+	Removing .text.SYSCON_WakeUp_Disable(Obj/FWlib_apt32f102a_syscon.o), (12 bytes).
+	Removing .text.SYSCON_Read_CINF0(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.SYSCON_Read_CINF1(Obj/FWlib_apt32f102a_syscon.o), (16 bytes).
+	Removing .text.SYSCON_Software_Reset(Obj/FWlib_apt32f102a_syscon.o), (20 bytes).
+	Removing .text.SYSCON_INT_Priority(Obj/FWlib_apt32f102a_syscon.o), (36 bytes).
+	Removing .text.Set_INT_Priority(Obj/FWlib_apt32f102a_syscon.o), (48 bytes).
+	Removing .text.GPIO_Remap(Obj/FWlib_apt32f102a_syscon.o), (652 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_tkey_parameter.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_tkey_parameter.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_tkey_parameter.o), (0 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_uart.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_uart.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_uart.o), (2 bytes).
+	Removing .text.UART0_DeInit(Obj/FWlib_apt32f102a_uart.o), (24 bytes).
+	Removing .text.UART2_DeInit(Obj/FWlib_apt32f102a_uart.o), (24 bytes).
+	Removing .text.UART0_Int_Enable(Obj/FWlib_apt32f102a_uart.o), (28 bytes).
+	Removing .text.UART0_Int_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART1_Int_Enable(Obj/FWlib_apt32f102a_uart.o), (28 bytes).
+	Removing .text.UART1_Int_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART2_Int_Enable(Obj/FWlib_apt32f102a_uart.o), (28 bytes).
+	Removing .text.UART2_Int_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART0_WakeUp_Enable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART0_WakeUp_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART1_WakeUp_Enable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART1_WakeUp_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART2_WakeUp_Enable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UART2_WakeUp_Disable(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UARTInitRxTxIntEn(Obj/FWlib_apt32f102a_uart.o), (10 bytes).
+	Removing .text.UARTInitRxIntEn(Obj/FWlib_apt32f102a_uart.o), (16 bytes).
+	Removing .text.UARTClose(Obj/FWlib_apt32f102a_uart.o), (6 bytes).
+	Removing .text.UARTTransmit(Obj/FWlib_apt32f102a_uart.o), (30 bytes).
+	Removing .text.UARTTTransmit_data_set(Obj/FWlib_apt32f102a_uart.o), (44 bytes).
+	Removing .text.UARTTransmit_INT_Send(Obj/FWlib_apt32f102a_uart.o), (72 bytes).
+	Removing .text.UARTRxByte(Obj/FWlib_apt32f102a_uart.o), (22 bytes).
+	Removing .text.UART_ReturnRxByte(Obj/FWlib_apt32f102a_uart.o), (24 bytes).
+	Removing .text.UARTReceive(Obj/FWlib_apt32f102a_uart.o), (56 bytes).
+	Removing COMMON(Obj/FWlib_apt32f102a_uart.o), (36 bytes).
+	Removing .text(Obj/FWlib_apt32f102a_wwdt.o), (0 bytes).
+	Removing .data(Obj/FWlib_apt32f102a_wwdt.o), (0 bytes).
+	Removing .bss(Obj/FWlib_apt32f102a_wwdt.o), (0 bytes).
+	Removing .text.WWDT_DeInit(Obj/FWlib_apt32f102a_wwdt.o), (28 bytes).
+	Removing .text.WWDT_CMD(Obj/FWlib_apt32f102a_wwdt.o), (24 bytes).
+	Removing .text(Obj/main.o), (0 bytes).
+	Removing .data(Obj/main.o), (1 bytes).
+	Removing .bss(Obj/main.o), (1 bytes).
+	Removing .rodata(Obj/main.o), (3200 bytes).
+	Removing .text(Obj/apt32f102a_initial.o), (0 bytes).
+	Removing .data(Obj/apt32f102a_initial.o), (0 bytes).
+	Removing .bss(Obj/apt32f102a_initial.o), (0 bytes).
+	Removing .text.delay_nus(Obj/apt32f102a_initial.o), (34 bytes).
+	Removing .text.EPT0_CONFIG(Obj/apt32f102a_initial.o), (292 bytes).
+	Removing .text.GPT0_CONFIG(Obj/apt32f102a_initial.o), (168 bytes).
+	Removing .text.COUNTA_CONFIG(Obj/apt32f102a_initial.o), (64 bytes).
+	Removing .text.RTC_CONFIG(Obj/apt32f102a_initial.o), (184 bytes).
+	Removing .text.ET_CONFIG(Obj/apt32f102a_initial.o), (32 bytes).
+	Removing .text.SIO_CONFIG(Obj/apt32f102a_initial.o), (64 bytes).
+	Removing .text.SPI_SLAVE_CONFIG(Obj/apt32f102a_initial.o), (50 bytes).
+	Removing .text.I2C_MASTER_CONFIG(Obj/apt32f102a_initial.o), (48 bytes).
+	Removing .text.I2C_SLAVE_CONFIG(Obj/apt32f102a_initial.o), (104 bytes).
+	Removing .text.UART0_CONFIG(Obj/apt32f102a_initial.o), (32 bytes).
+	Removing .text.UART2_CONFIG(Obj/apt32f102a_initial.o), (32 bytes).
+	Removing .text.ADC12_CONFIG(Obj/apt32f102a_initial.o), (74 bytes).
+	Removing .text.TK_CONFIG(Obj/apt32f102a_initial.o), (8 bytes).
+	Removing .text(Obj/apt32f102a_interrupt.o), (0 bytes).
+	Removing .data(Obj/apt32f102a_interrupt.o), (0 bytes).
+	Removing .bss(Obj/apt32f102a_interrupt.o), (0 bytes).
+	Removing .text.SystemDesPtr(Obj/apt32f102a_interrupt.o), (2 bytes).
+	Removing .text(Obj/drivers_apt32f102.o), (0 bytes).
+	Removing .bss(Obj/drivers_apt32f102.o), (0 bytes).
+	Removing .text.__modsi3(Obj/drivers_apt32f102.o), (36 bytes).
+	Removing .text(Obj/drivers_apt32f102_ck801.o), (0 bytes).
+	Removing .data(Obj/drivers_apt32f102_ck801.o), (0 bytes).
+	Removing .bss(Obj/drivers_apt32f102_ck801.o), (0 bytes).
+	Removing .text.CK801_Init(Obj/drivers_apt32f102_ck801.o), (108 bytes).
+	Removing .text.force_interrupt(Obj/drivers_apt32f102_ck801.o), (24 bytes).
+	Removing .text.CK_CPU_DisAllNormalIrq(Obj/drivers_apt32f102_ck801.o), (6 bytes).
+	Removing .text(Obj/User_analog.o), (0 bytes).
+	Removing .data(Obj/User_analog.o), (0 bytes).
+	Removing .text(Obj/User_key.o), (0 bytes).
+	Removing .data(Obj/User_key.o), (0 bytes).
+	Removing .text(Obj/User_led.o), (0 bytes).
+	Removing .data(Obj/User_led.o), (0 bytes).
+	Removing .bss(Obj/User_led.o), (3 bytes).
+	Removing .text.led_map(Obj/User_led.o), (248 bytes).
+	Removing .text.led_display(Obj/User_led.o), (604 bytes).
+	Removing .rodata(Obj/User_led.o), (53 bytes).
+	Removing .debug_info(Obj/User_led.o), (7908 bytes).
+	Removing .debug_abbrev(Obj/User_led.o), (473 bytes).
+	Removing .debug_loc(Obj/User_led.o), (93 bytes).
+	Removing .debug_aranges(Obj/User_led.o), (40 bytes).
+	Removing .debug_ranges(Obj/User_led.o), (24 bytes).
+	Removing .debug_line(Obj/User_led.o), (297 bytes).
+	Removing .debug_str(Obj/User_led.o), (3205 bytes).
+	Removing .comment(Obj/User_led.o), (67 bytes).
+	Removing .debug_frame(Obj/User_led.o), (72 bytes).
+	Removing .csky.attributes(Obj/User_led.o), (32 bytes).
+	Removing COMMON(Obj/User_led.o), (4 bytes).
+	Removing .text(Obj/User_logic.o), (0 bytes).
+	Removing .data(Obj/User_logic.o), (0 bytes).
+	Removing .text(Obj/User_task.o), (0 bytes).
+	Removing .bss(Obj/User_task.o), (0 bytes).
+	Removing .text(Obj/User_uart.o), (0 bytes).
+	Removing .data(Obj/User_uart.o), (0 bytes).
+	Removing .bss(Obj/User_uart.o), (0 bytes).
+	Removing .text.uart_string(Obj/User_uart.o), (36 bytes).
+	Removing .text.task_debug(Obj/User_uart.o), (2 bytes).
+	Removing .debug_info(Obj/User_uart.o), (7845 bytes).
+	Removing .debug_abbrev(Obj/User_uart.o), (412 bytes).
+	Removing .debug_loc(Obj/User_uart.o), (60 bytes).
+	Removing .debug_aranges(Obj/User_uart.o), (40 bytes).
+	Removing .debug_ranges(Obj/User_uart.o), (24 bytes).
+	Removing .debug_line(Obj/User_uart.o), (196 bytes).
+	Removing .debug_str(Obj/User_uart.o), (3207 bytes).
+	Removing .comment(Obj/User_uart.o), (67 bytes).
+	Removing .debug_frame(Obj/User_uart.o), (60 bytes).
+	Removing .csky.attributes(Obj/User_uart.o), (32 bytes).
+	Removing .text(Obj/User_gui.o), (0 bytes).
+	Removing COMMON(Obj/User_gui.o), (1 bytes).
+	Removing .text(Obj/LCD_lcd.o), (0 bytes).
+	Removing .data(Obj/LCD_lcd.o), (0 bytes).
+	Removing .bss(Obj/LCD_lcd.o), (0 bytes).
+	Removing .text.LCD_DrawLine(Obj/LCD_lcd.o), (142 bytes).
+	Removing .text.LCD_DrawRectangle(Obj/LCD_lcd.o), (76 bytes).
+	Removing .text.Draw_Circle(Obj/LCD_lcd.o), (170 bytes).
+	Removing .text.LCD_ShowChinese(Obj/LCD_lcd.o), (48 bytes).
+	Removing .text.LCD_ShowChinese12x12(Obj/LCD_lcd.o), (2 bytes).
+	Removing .text.LCD_ShowChinese16x16(Obj/LCD_lcd.o), (2 bytes).
+	Removing .text.LCD_ShowChinese24x24(Obj/LCD_lcd.o), (2 bytes).
+	Removing .text.LCD_ShowChinese32x32(Obj/LCD_lcd.o), (2 bytes).
+	Removing .text.mypow(Obj/LCD_lcd.o), (20 bytes).
+	Removing .text.LCD_ShowFloatNum1(Obj/LCD_lcd.o), (176 bytes).
+	Removing .text.LCD_ShowPicture(Obj/LCD_lcd.o), (82 bytes).
+	Removing .text(Obj/LCD_lcd_init.o), (0 bytes).
+	Removing .data(Obj/LCD_lcd_init.o), (0 bytes).
+	Removing .bss(Obj/LCD_lcd_init.o), (0 bytes).
+	Removing .text.delay_ms(Obj/LCD_lcd_init.o), (2 bytes).
+	Removing .text.LCD_Writ_Bus(Obj/LCD_lcd_init.o), (52 bytes).
+	Removing .text(Obj/__rt_entry.o), (240 bytes).
+	Removing .data(Obj/__rt_entry.o), (0 bytes).
+	Removing .bss(Obj/__rt_entry.o), (0 bytes).
+	Removing .debug_line(Obj/__rt_entry.o), (131 bytes).
+	Removing .debug_info(Obj/__rt_entry.o), (105 bytes).
+	Removing .debug_abbrev(Obj/__rt_entry.o), (20 bytes).
+	Removing .debug_aranges(Obj/__rt_entry.o), (32 bytes).
+	Removing .csky.attributes(Obj/__rt_entry.o), (32 bytes).
+	Removing .text(FWlib_apt32f102_tkey.o), (0 bytes).
+	Removing .bss(FWlib_apt32f102_tkey.o), (0 bytes).
+	Removing .text.TK_DeInit(FWlib_apt32f102_tkey.o), (60 bytes).
+	Removing .text.tk_scan_config(FWlib_apt32f102_tkey.o), (40 bytes).
+	Removing .text.TK_ConfigInterrupt_CMD(FWlib_apt32f102_tkey.o), (32 bytes).
+	Removing .text.lpt_init(FWlib_apt32f102_tkey.o), (76 bytes).
+	Removing .text.TK_setup_sleep(FWlib_apt32f102_tkey.o), (92 bytes).
+	Removing .text.TK_quit_sleep(FWlib_apt32f102_tkey.o), (40 bytes).
+	Removing .text(FWlib_apt32f102_clkcalib.o), (0 bytes).
+	Removing .data(FWlib_apt32f102_clkcalib.o), (0 bytes).
+	Removing .bss(FWlib_apt32f102_clkcalib.o), (0 bytes).
+	Removing .data(pow.o), (0 bytes).
+	Removing .bss(pow.o), (0 bytes).
+	Removing .data(fabs.o), (0 bytes).
+	Removing .bss(fabs.o), (0 bytes).
+	Removing .data(scalbn.o), (0 bytes).
+	Removing .bss(scalbn.o), (0 bytes).
+	Removing .data(sqrt.o), (0 bytes).
+	Removing .bss(sqrt.o), (0 bytes).
+	Removing .data(_csky_case_uqi.o), (0 bytes).
+	Removing .bss(_csky_case_uqi.o), (0 bytes).
+	Removing .data(_csky_case_uhi.o), (0 bytes).
+	Removing .bss(_csky_case_uhi.o), (0 bytes).
+	Removing .data(_fixunssfsi.o), (0 bytes).
+	Removing .bss(_fixunssfsi.o), (0 bytes).
+	Removing .data(_fixunsdfsi.o), (0 bytes).
+	Removing .bss(_fixunsdfsi.o), (0 bytes).
+	Removing .data(_addsub_sf.o), (0 bytes).
+	Removing .bss(_addsub_sf.o), (0 bytes).
+	Removing .data(_mul_sf.o), (0 bytes).
+	Removing .bss(_mul_sf.o), (0 bytes).
+	Removing .data(_ge_sf.o), (0 bytes).
+	Removing .bss(_ge_sf.o), (0 bytes).
+	Removing .data(_si_to_sf.o), (0 bytes).
+	Removing .bss(_si_to_sf.o), (0 bytes).
+	Removing .data(_sf_to_si.o), (0 bytes).
+	Removing .bss(_sf_to_si.o), (0 bytes).
+	Removing .text(_thenan_sf.o), (0 bytes).
+	Removing .data(_thenan_sf.o), (0 bytes).
+	Removing .bss(_thenan_sf.o), (0 bytes).
+	Removing .data(_addsub_df.o), (0 bytes).
+	Removing .bss(_addsub_df.o), (0 bytes).
+	Removing .data(_mul_df.o), (0 bytes).
+	Removing .bss(_mul_df.o), (0 bytes).
+	Removing .data(_div_df.o), (0 bytes).
+	Removing .bss(_div_df.o), (0 bytes).
+	Removing .data(_gt_df.o), (0 bytes).
+	Removing .bss(_gt_df.o), (0 bytes).
+	Removing .data(_ge_df.o), (0 bytes).
+	Removing .bss(_ge_df.o), (0 bytes).
+	Removing .data(_le_df.o), (0 bytes).
+	Removing .bss(_le_df.o), (0 bytes).
+	Removing .data(_si_to_df.o), (0 bytes).
+	Removing .bss(_si_to_df.o), (0 bytes).
+	Removing .data(_df_to_si.o), (0 bytes).
+	Removing .bss(_df_to_si.o), (0 bytes).
+	Removing .data(_df_to_sf.o), (0 bytes).
+	Removing .bss(_df_to_sf.o), (0 bytes).
+	Removing .text(_thenan_df.o), (0 bytes).
+	Removing .data(_thenan_df.o), (0 bytes).
+	Removing .bss(_thenan_df.o), (0 bytes).
+	Removing .data(_usi_to_df.o), (0 bytes).
+	Removing .bss(_usi_to_df.o), (0 bytes).
+	Removing .data(_muldi3.o), (0 bytes).
+	Removing .bss(_muldi3.o), (0 bytes).
+	Removing .data(_clzsi2.o), (0 bytes).
+	Removing .bss(_clzsi2.o), (0 bytes).
+	Removing .data(_pack_sf.o), (0 bytes).
+	Removing .bss(_pack_sf.o), (0 bytes).
+	Removing .data(_unpack_sf.o), (0 bytes).
+	Removing .bss(_unpack_sf.o), (0 bytes).
+	Removing .data(_fpcmp_parts_sf.o), (0 bytes).
+	Removing .bss(_fpcmp_parts_sf.o), (0 bytes).
+	Removing .data(_make_sf.o), (0 bytes).
+	Removing .bss(_make_sf.o), (0 bytes).
+	Removing .data(_pack_df.o), (0 bytes).
+	Removing .bss(_pack_df.o), (0 bytes).
+	Removing .data(_unpack_df.o), (0 bytes).
+	Removing .bss(_unpack_df.o), (0 bytes).
+	Removing .data(_fpcmp_parts_df.o), (0 bytes).
+	Removing .bss(_fpcmp_parts_df.o), (0 bytes).
+	Removing .text(_clz.o), (0 bytes).
+	Removing .data(_clz.o), (0 bytes).
+	Removing .bss(_clz.o), (0 bytes).
+	Removing .data(memset_fast.o), (0 bytes).
+	Removing .bss(memset_fast.o), (0 bytes).
+	Removing .data(memcpy_fast.o), (0 bytes).
+	Removing .bss(memcpy_fast.o), (0 bytes).
+
+643 unused seciton(s) (total 187510 bytes) removed from the image.
+
+======================================================================
+
+Image Symbol Table 
+
+	Local Symbols
+
+	Symbol Name                        Value        Type   Size  Section
+	FWlib_apt32f102_clkcalib.o         0x00000000     df        0  *ABS*
+	FWlib_apt32f102_tkey.o             0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_adc.o         0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_bt.o          0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_coret.o       0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_gpio.o        0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_ifc.o         0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_lpt.o         0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_spi.o         0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_syscon.o      0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_tkey_parameter.o0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_uart.o        0x00000000     df        0  *ABS*
+	Obj/FWlib_apt32f102a_wwdt.o        0x00000000     df        0  *ABS*
+	Obj/LCD_lcd.o                      0x00000000     df        0  *ABS*
+	Obj/LCD_lcd_init.o                 0x00000000     df        0  *ABS*
+	Obj/User_analog.o                  0x00000000     df        0  *ABS*
+	Obj/User_gui.o                     0x00000000     df        0  *ABS*
+	Obj/User_key.o                     0x00000000     df        0  *ABS*
+	Obj/User_logic.o                   0x00000000     df        0  *ABS*
+	Obj/User_task.o                    0x00000000     df        0  *ABS*
+	Obj/apt32f102a_initial.o           0x00000000     df        0  *ABS*
+	Obj/apt32f102a_interrupt.o         0x00000000     df        0  *ABS*
+	Obj/arch_apt32f102a_iostring.o     0x00000000     df        0  *ABS*
+	Obj/arch_crt0.o                    0x00000000     df        0  *ABS*
+	Obj/arch_mem_init.o                0x00000000     df        0  *ABS*
+	Obj/drivers_apt32f102.o            0x00000000     df        0  *ABS*
+	Obj/drivers_apt32f102_ck801.o      0x00000000     df        0  *ABS*
+	Obj/main.o                         0x00000000     df        0  *ABS*
+	_addsub_df.o                       0x00000000     df        0  *ABS*
+	_addsub_sf.o                       0x00000000     df        0  *ABS*
+	_clzsi2.o                          0x00000000     df        0  *ABS*
+	_csky_case_uhi.o                   0x00000000     df        0  *ABS*
+	_csky_case_uqi.o                   0x00000000     df        0  *ABS*
+	_df_to_sf.o                        0x00000000     df        0  *ABS*
+	_df_to_si.o                        0x00000000     df        0  *ABS*
+	_div_df.o                          0x00000000     df        0  *ABS*
+	_fixunsdfsi.o                      0x00000000     df        0  *ABS*
+	_fixunssfsi.o                      0x00000000     df        0  *ABS*
+	_fpcmp_parts_df.o                  0x00000000     df        0  *ABS*
+	_fpcmp_parts_sf.o                  0x00000000     df        0  *ABS*
+	_ge_df.o                           0x00000000     df        0  *ABS*
+	_ge_sf.o                           0x00000000     df        0  *ABS*
+	_gt_df.o                           0x00000000     df        0  *ABS*
+	_le_df.o                           0x00000000     df        0  *ABS*
+	_make_sf.o                         0x00000000     df        0  *ABS*
+	_mul_df.o                          0x00000000     df        0  *ABS*
+	_mul_sf.o                          0x00000000     df        0  *ABS*
+	_muldi3.o                          0x00000000     df        0  *ABS*
+	_pack_df.o                         0x00000000     df        0  *ABS*
+	_pack_sf.o                         0x00000000     df        0  *ABS*
+	_sf_to_si.o                        0x00000000     df        0  *ABS*
+	_si_to_df.o                        0x00000000     df        0  *ABS*
+	_si_to_sf.o                        0x00000000     df        0  *ABS*
+	_unpack_df.o                       0x00000000     df        0  *ABS*
+	_unpack_sf.o                       0x00000000     df        0  *ABS*
+	_usi_to_df.o                       0x00000000     df        0  *ABS*
+	fabs.o                             0x00000000     df        0  *ABS*
+	memcpy_fast.o                      0x00000000     df        0  *ABS*
+	memset_fast.o                      0x00000000     df        0  *ABS*
+	pow.o                              0x00000000     df        0  *ABS*
+	scalbn.o                           0x00000000     df        0  *ABS*
+	sqrt.o                             0x00000000     df        0  *ABS*
+	$d                                 0x00000000               0  .text
+	$t                                 0x0000010c               0  .text
+	INIT_KERLE_STACK                   0x0000013e               0  .text
+	__to_main                          0x00000146               0  .text
+	__dummy                            0x00000182               0  .text
+	$d                                 0x00000186               0  .text
+	$d                                 0x000001b4               0  .text
+	$t                                 0x000001b4               0  .text
+	$d                                 0x00000578               0  .text
+	$t                                 0x000005e0               0  .text
+	$d                                 0x00000aa8               0  .text
+	$t                                 0x00000b58               0  .text
+	$d                                 0x00000b5e               0  .text
+	$t                                 0x00000b5e               0  .text
+	$d                                 0x00000b64               0  .text
+	$t                                 0x00000b64               0  .text
+	$d                                 0x00000b80               0  .text
+	$d                                 0x00000b84               0  .text
+	$t                                 0x00000b84               0  .text
+	$d                                 0x00000cf0               0  .text
+	$d                                 0x00000cfc               0  .text
+	$t                                 0x00000cfc               0  .text
+	$d                                 0x00000d10               0  .text
+	$t                                 0x00000d10               0  .text
+	$d                                 0x00000d2c               0  .text
+	$t                                 0x00000d2c               0  .text
+	$d                                 0x00000d5c               0  .text
+	$t                                 0x00000d5c               0  .text
+	$d                                 0x00000d90               0  .text
+	_fpadd_parts                       0x00000d94      F      332  .text
+	$d                                 0x00000d94               0  .text
+	$t                                 0x00000d94               0  .text
+	$d                                 0x00000ed8               0  .text
+	$t                                 0x00000ee0               0  .text
+	$d                                 0x00000f40               0  .text
+	$t                                 0x00000f40               0  .text
+	$d                                 0x00001050               0  .text
+	$d                                 0x00001058               0  .text
+	$t                                 0x00001058               0  .text
+	$d                                 0x00001090               0  .text
+	$t                                 0x00001090               0  .text
+	$d                                 0x000010f4               0  .text
+	$t                                 0x000010f4               0  .text
+	$d                                 0x00001144               0  .text
+	_fpadd_parts                       0x00001148      F      724  .text
+	$d                                 0x00001148               0  .text
+	$t                                 0x00001148               0  .text
+	$d                                 0x00001410               0  .text
+	$t                                 0x0000141c               0  .text
+	$d                                 0x00001484               0  .text
+	$t                                 0x00001484               0  .text
+	$d                                 0x000016ac               0  .text
+	$d                                 0x000016b8               0  .text
+	$t                                 0x000016b8               0  .text
+	$d                                 0x00001808               0  .text
+	$d                                 0x0000180c               0  .text
+	$t                                 0x0000180c               0  .text
+	$d                                 0x00001848               0  .text
+	$t                                 0x00001848               0  .text
+	$d                                 0x00001884               0  .text
+	$t                                 0x00001884               0  .text
+	$d                                 0x000018c0               0  .text
+	$t                                 0x000018c0               0  .text
+	$d                                 0x0000192c               0  .text
+	$d                                 0x00001930               0  .text
+	$t                                 0x00001930               0  .text
+	$d                                 0x0000199c               0  .text
+	$d                                 0x000019a0               0  .text
+	$t                                 0x000019a0               0  .text
+	$d                                 0x000019d0               0  .text
+	$t                                 0x000019d0               0  .text
+	$d                                 0x00001a24               0  .text
+	$t                                 0x00001a24               0  .text
+	$d                                 0x00001a68               0  .text
+	$t                                 0x00001a68               0  .text
+	$d                                 0x00001a9c               0  .text
+	$d                                 0x00001aa8               0  .text
+	$t                                 0x00001aa8               0  .text
+	$d                                 0x00001b5c               0  .text
+	$d                                 0x00001b60               0  .text
+	$t                                 0x00001b60               0  .text
+	$d                                 0x00001bdc               0  .text
+	$d                                 0x00001be4               0  .text
+	$t                                 0x00001be4               0  .text
+	$d                                 0x00001c5c               0  .text
+	$t                                 0x00001c5c               0  .text
+	$d                                 0x00001c74               0  .text
+	$t                                 0x00001c74               0  .text
+	$d                                 0x00001dfc               0  .text
+	$d                                 0x00001e10               0  .text
+	$t                                 0x00001e10               0  .text
+	$d                                 0x00001ec8               0  .text
+	$d                                 0x00001ed4               0  .text
+	$t                                 0x00001ed4               0  .text
+	$d                                 0x00001f60               0  .text
+	$t                                 0x00001f60               0  .text
+	$d                                 0x00001fe8               0  .text
+	$t                                 0x00001fe8               0  .text
+	$d                                 0x0000204c               0  .text.__main
+	$t                                 0x0000204c               0  .text.__main
+	$d                                 0x00002070               0  .text.__main
+	$d                                 0x00002084               0  .text.__putchar__
+	$t                                 0x00002084               0  .text.__putchar__
+	$d                                 0x00002094               0  .text.__putchar__
+	$d                                 0x00002098               0  .text.myitoa
+	$t                                 0x00002098               0  .text.myitoa
+	$d                                 0x00002124               0  .text.my_printf
+	$t                                 0x00002124               0  .text.my_printf
+	$d                                 0x000021ec               0  .text.ADC12_Control
+	$t                                 0x000021ec               0  .text.ADC12_Control
+	$d                                 0x000021f8               0  .text.ADC12_Control
+	ADC12_CMD.part.0                   0x000021fc      F       32  .text.ADC12_CMD.part.0
+	$d                                 0x000021fc               0  .text.ADC12_CMD.part.0
+	$t                                 0x000021fc               0  .text.ADC12_CMD.part.0
+	$d                                 0x00002218               0  .text.ADC12_CMD.part.0
+	$d                                 0x0000221c               0  .text.ADC12_CLK_CMD
+	$t                                 0x0000221c               0  .text.ADC12_CLK_CMD
+	$d                                 0x00002244               0  .text.ADC12_CLK_CMD
+	$d                                 0x00002248               0  .text.ADC12_Software_Reset
+	$t                                 0x00002248               0  .text.ADC12_Software_Reset
+	$d                                 0x00002254               0  .text.ADC12_CMD
+	$t                                 0x00002254               0  .text.ADC12_CMD
+	$d                                 0x00002278               0  .text.ADC12_CMD
+	$d                                 0x0000227c               0  .text.ADC12_ready_wait
+	$t                                 0x0000227c               0  .text.ADC12_ready_wait
+	$d                                 0x0000228c               0  .text.ADC12_ready_wait
+	$d                                 0x00002290               0  .text.ADC12_SEQEND_wait
+	$t                                 0x00002290               0  .text.ADC12_SEQEND_wait
+	$d                                 0x000022a4               0  .text.ADC12_SEQEND_wait
+	$d                                 0x000022a8               0  .text.ADC12_Configure_Mode
+	$t                                 0x000022a8               0  .text.ADC12_Configure_Mode
+	$d                                 0x00002320               0  .text.ADC12_Configure_Mode
+	$d                                 0x00002324               0  .text.ADC12_Configure_VREF_Selecte
+	$t                                 0x00002324               0  .text.ADC12_Configure_VREF_Selecte
+	$d                                 0x00002498               0  .text.ADC12_Configure_VREF_Selecte
+	$d                                 0x000024bc               0  .text.ADC12_ConversionChannel_Config
+	$t                                 0x000024bc               0  .text.ADC12_ConversionChannel_Config
+	$d                                 0x000024e8               0  .text.ADC12_ConversionChannel_Config
+	$t                                 0x000024f8               0  .text.ADC12_ConversionChannel_Config
+	$d                                 0x00002630               0  .text.ADC12_ConversionChannel_Config
+	$d                                 0x0000263c               0  .text.BT_DeInit
+	$t                                 0x0000263c               0  .text.BT_DeInit
+	$d                                 0x00002658               0  .text.BT_Start
+	$t                                 0x00002658               0  .text.BT_Start
+	$d                                 0x00002660               0  .text.BT_Soft_Reset
+	$t                                 0x00002660               0  .text.BT_Soft_Reset
+	$d                                 0x0000266a               0  .text.BT_Configure
+	$t                                 0x0000266a               0  .text.BT_Configure
+	$d                                 0x00002682               0  .text.BT_ControlSet_Configure
+	$t                                 0x00002682               0  .text.BT_ControlSet_Configure
+	$d                                 0x000026ae               0  .text.BT_Period_CMP_Write
+	$t                                 0x000026ae               0  .text.BT_Period_CMP_Write
+	$d                                 0x000026b4               0  .text.BT_ConfigInterrupt_CMD
+	$t                                 0x000026b4               0  .text.BT_ConfigInterrupt_CMD
+	$d                                 0x000026c8               0  .text.BT0_INT_ENABLE
+	$t                                 0x000026c8               0  .text.BT0_INT_ENABLE
+	$d                                 0x000026d4               0  .text.BT0_INT_ENABLE
+	$d                                 0x000026d8               0  .text.CORET_DeInit
+	$t                                 0x000026d8               0  .text.CORET_DeInit
+	$d                                 0x000026ec               0  .text.CORET_DeInit
+	$d                                 0x000026f0               0  .text.CORET_Int_Enable
+	$t                                 0x000026f0               0  .text.CORET_Int_Enable
+	$d                                 0x00002700               0  .text.CORET_Int_Enable
+	$d                                 0x00002708               0  .text.CORET_start
+	$t                                 0x00002708               0  .text.CORET_start
+	$d                                 0x00002714               0  .text.CORET_start
+	$d                                 0x00002718               0  .text.CORET_CLKSOURCE_EX
+	$t                                 0x00002718               0  .text.CORET_CLKSOURCE_EX
+	$d                                 0x00002724               0  .text.CORET_CLKSOURCE_EX
+	$d                                 0x00002728               0  .text.CORET_TICKINT_Enable
+	$t                                 0x00002728               0  .text.CORET_TICKINT_Enable
+	$d                                 0x00002734               0  .text.CORET_TICKINT_Enable
+	$d                                 0x00002738               0  .text.CORET_reload
+	$t                                 0x00002738               0  .text.CORET_reload
+	$d                                 0x00002744               0  .text.CORET_reload
+	$d                                 0x00002748               0  .text.GPIO_Init
+	$t                                 0x00002748               0  .text.GPIO_Init
+	$d                                 0x0000275a               0  .text.GPIO_Init
+	$t                                 0x00002762               0  .text.GPIO_Init
+	$d                                 0x000027be               0  .text.GPIO_Init
+	$t                                 0x000027c6               0  .text.GPIO_Init
+	$d                                 0x00002814               0  .text.GPIO_Init
+	$d                                 0x00002828               0  .text.GPIO_Write_High
+	$t                                 0x00002828               0  .text.GPIO_Write_High
+	$d                                 0x00002830               0  .text.GPIO_Write_Low
+	$t                                 0x00002830               0  .text.GPIO_Write_Low
+	$d                                 0x00002838               0  .text.Page_ProgramData
+	$t                                 0x00002838               0  .text.Page_ProgramData
+	$d                                 0x000028d0               0  .text.Page_ProgramData
+	$d                                 0x000028d8               0  .text.ReadDataArry
+	$t                                 0x000028d8               0  .text.ReadDataArry
+	$d                                 0x00002908               0  .text.LPT_Soft_Reset
+	$t                                 0x00002908               0  .text.LPT_Soft_Reset
+	$d                                 0x00002918               0  .text.LPT_Soft_Reset
+	$d                                 0x0000291c               0  .text.SPI_DeInit
+	$t                                 0x0000291c               0  .text.SPI_DeInit
+	$d                                 0x00002938               0  .text.SPI_DeInit
+	$d                                 0x0000293c               0  .text.SPI_NSS_IO_Init
+	$t                                 0x0000293c               0  .text.SPI_NSS_IO_Init
+	$d                                 0x00002968               0  .text.SPI_NSS_IO_Init
+	$d                                 0x00002970               0  .text.SPI_Master_Init
+	$t                                 0x00002970               0  .text.SPI_Master_Init
+	$d                                 0x00002a0c               0  .text.SPI_Master_Init
+	$d                                 0x00002a20               0  .text.SPI_ConfigInterrupt_CMD
+	$t                                 0x00002a20               0  .text.SPI_ConfigInterrupt_CMD
+	$d                                 0x00002a38               0  .text.SPI_ConfigInterrupt_CMD
+	$d                                 0x00002a3c               0  .text.SPI_Int_Enable
+	$t                                 0x00002a3c               0  .text.SPI_Int_Enable
+	$d                                 0x00002a48               0  .text.SPI_Int_Enable
+	SYSCON_General_CMD.part.0          0x00002a4c      F      116  .text.SYSCON_General_CMD.part.0
+	$d                                 0x00002a4c               0  .text.SYSCON_General_CMD.part.0
+	$t                                 0x00002a4c               0  .text.SYSCON_General_CMD.part.0
+	$d                                 0x00002ab8               0  .text.SYSCON_General_CMD.part.0
+	$d                                 0x00002ac0               0  .text.SYSCON_RST_VALUE
+	$t                                 0x00002ac0               0  .text.SYSCON_RST_VALUE
+	$d                                 0x00002afc               0  .text.SYSCON_RST_VALUE
+	$d                                 0x00002b18               0  .text.SYSCON_General_CMD
+	$t                                 0x00002b18               0  .text.SYSCON_General_CMD
+	$d                                 0x00002b44               0  .text.SYSCON_General_CMD
+	$d                                 0x00002b48               0  .text.SystemCLK_HCLKDIV_PCLKDIV_Config
+	$t                                 0x00002b48               0  .text.SystemCLK_HCLKDIV_PCLKDIV_Config
+	$d                                 0x00002bb0               0  .text.SystemCLK_HCLKDIV_PCLKDIV_Config
+	$d                                 0x00002bc0               0  .text.SYSCON_HFOSC_SELECTE
+	$t                                 0x00002bc0               0  .text.SYSCON_HFOSC_SELECTE
+	$d                                 0x00002be4               0  .text.SYSCON_HFOSC_SELECTE
+	$d                                 0x00002be8               0  .text.SYSCON_WDT_CMD
+	$t                                 0x00002be8               0  .text.SYSCON_WDT_CMD
+	$d                                 0x00002c18               0  .text.SYSCON_WDT_CMD
+	$d                                 0x00002c24               0  .text.SYSCON_IWDCNT_Reload
+	$t                                 0x00002c24               0  .text.SYSCON_IWDCNT_Reload
+	$d                                 0x00002c34               0  .text.SYSCON_IWDCNT_Reload
+	$d                                 0x00002c38               0  .text.SYSCON_IWDCNT_Config
+	$t                                 0x00002c38               0  .text.SYSCON_IWDCNT_Config
+	$d                                 0x00002c48               0  .text.SYSCON_IWDCNT_Config
+	$d                                 0x00002c50               0  .text.SYSCON_LVD_Config
+	$t                                 0x00002c50               0  .text.SYSCON_LVD_Config
+	$d                                 0x00002c68               0  .text.SYSCON_LVD_Config
+	$d                                 0x00002c70               0  .text.LVD_Int_Enable
+	$t                                 0x00002c70               0  .text.LVD_Int_Enable
+	$d                                 0x00002c88               0  .text.LVD_Int_Enable
+	$d                                 0x00002c8c               0  .text.EXTI_trigger_CMD
+	$t                                 0x00002c8c               0  .text.EXTI_trigger_CMD
+	$d                                 0x00002cc8               0  .text.EXTI_trigger_CMD
+	$d                                 0x00002ccc               0  .text.SYSCON_Int_Enable
+	$t                                 0x00002ccc               0  .text.SYSCON_Int_Enable
+	$d                                 0x00002cd4               0  .text.SYSCON_Int_Enable
+	$d                                 0x00002cd8               0  .text.tk_parameter_init
+	$t                                 0x00002cd8               0  .text.tk_parameter_init
+	$d                                 0x00002da8               0  .text.tk_parameter_init
+	$d                                 0x00002df4               0  .text.UART1_DeInit
+	$t                                 0x00002df4               0  .text.UART1_DeInit
+	$d                                 0x00002e08               0  .text.UART1_DeInit
+	$d                                 0x00002e0c               0  .text.UART_IO_Init
+	$t                                 0x00002e0c               0  .text.UART_IO_Init
+	$d                                 0x00002edc               0  .text.UART_IO_Init
+	$d                                 0x00002ee4               0  .text.UARTInit
+	$t                                 0x00002ee4               0  .text.UARTInit
+	$d                                 0x00002eee               0  .text.UARTTxByte
+	$t                                 0x00002eee               0  .text.UARTTxByte
+	$d                                 0x00002efc               0  .text.WWDT_CONFIG
+	$t                                 0x00002efc               0  .text.WWDT_CONFIG
+	$d                                 0x00002f10               0  .text.WWDT_CONFIG
+	$d                                 0x00002f14               0  .text.WWDT_CNT_Load
+	$t                                 0x00002f14               0  .text.WWDT_CNT_Load
+	$d                                 0x00002f20               0  .text.WWDT_CNT_Load
+	$d                                 0x00002f24               0  .text.WWDT_Int_Config
+	$t                                 0x00002f24               0  .text.WWDT_Int_Config
+	$d                                 0x00002f4c               0  .text.WWDT_Int_Config
+	$d                                 0x00002f58               0  .text.startup.main
+	$t                                 0x00002f58               0  .text.startup.main
+	$d                                 0x00002fd0               0  .text.startup.main
+	$d                                 0x00003010               0  .text.delay_nms
+	$t                                 0x00003010               0  .text.delay_nms
+	$d                                 0x0000303c               0  .text.GPIO_CONFIG
+	$t                                 0x0000303c               0  .text.GPIO_CONFIG
+	$d                                 0x000030a0               0  .text.GPIO_CONFIG
+	$d                                 0x000030a8               0  .text.BT_CONFIG
+	$t                                 0x000030a8               0  .text.BT_CONFIG
+	$d                                 0x00003104               0  .text.BT_CONFIG
+	$d                                 0x00003108               0  .text.SPI_MASTER_CONFIG
+	$t                                 0x00003108               0  .text.SPI_MASTER_CONFIG
+	$d                                 0x00003140               0  .text.UART1_CONFIG
+	$t                                 0x00003140               0  .text.UART1_CONFIG
+	$d                                 0x0000315c               0  .text.UART1_CONFIG
+	$d                                 0x00003160               0  .text.SYSCON_CONFIG
+	$t                                 0x00003160               0  .text.SYSCON_CONFIG
+	$d                                 0x000031d4               0  .text.APT32F102_init
+	$t                                 0x000031d4               0  .text.APT32F102_init
+	$d                                 0x00003208               0  .text.APT32F102_init
+	$d                                 0x00003210               0  .text.SYSCONIntHandler
+	$t                                 0x00003210               0  .text.SYSCONIntHandler
+	$d                                 0x00003304               0  .text.SYSCONIntHandler
+	$d                                 0x00003308               0  .text.IFCIntHandler
+	$t                                 0x00003308               0  .text.IFCIntHandler
+	$d                                 0x0000336c               0  .text.IFCIntHandler
+	$d                                 0x00003370               0  .text.ADCIntHandler
+	$t                                 0x00003370               0  .text.ADCIntHandler
+	$d                                 0x000033d4               0  .text.ADCIntHandler
+	$d                                 0x000033d8               0  .text.EPT0IntHandler
+	$t                                 0x000033d8               0  .text.EPT0IntHandler
+	$d                                 0x00003574               0  .text.EPT0IntHandler
+	$d                                 0x00003580               0  .text.WWDTHandler
+	$t                                 0x00003580               0  .text.WWDTHandler
+	$d                                 0x000035b0               0  .text.WWDTHandler
+	$d                                 0x000035b4               0  .text.GPT0IntHandler
+	$t                                 0x000035b4               0  .text.GPT0IntHandler
+	$d                                 0x00003630               0  .text.GPT0IntHandler
+	$d                                 0x00003634               0  .text.RTCIntHandler
+	$t                                 0x00003634               0  .text.RTCIntHandler
+	$d                                 0x0000369c               0  .text.RTCIntHandler
+	$d                                 0x000036a4               0  .text.UART0IntHandler
+	$t                                 0x000036a4               0  .text.UART0IntHandler
+	$d                                 0x000036dc               0  .text.UART0IntHandler
+	$d                                 0x000036e0               0  .text.UART1IntHandler
+	$t                                 0x000036e0               0  .text.UART1IntHandler
+	$d                                 0x00003718               0  .text.UART1IntHandler
+	$d                                 0x0000371c               0  .text.UART2IntHandler
+	$t                                 0x0000371c               0  .text.UART2IntHandler
+	$d                                 0x00003754               0  .text.UART2IntHandler
+	$d                                 0x00003758               0  .text.SPI0IntHandler
+	$t                                 0x00003758               0  .text.SPI0IntHandler
+	$d                                 0x0000383c               0  .text.SPI0IntHandler
+	$d                                 0x00003840               0  .text.SIO0IntHandler
+	$t                                 0x00003840               0  .text.SIO0IntHandler
+	$d                                 0x000038b8               0  .text.SIO0IntHandler
+	$d                                 0x000038c4               0  .text.EXI0IntHandler
+	$t                                 0x000038c4               0  .text.EXI0IntHandler
+	$d                                 0x000038f0               0  .text.EXI0IntHandler
+	$d                                 0x000038f4               0  .text.EXI1IntHandler
+	$t                                 0x000038f4               0  .text.EXI1IntHandler
+	$d                                 0x00003920               0  .text.EXI1IntHandler
+	$d                                 0x00003924               0  .text.EXI2to3IntHandler
+	$t                                 0x00003924               0  .text.EXI2to3IntHandler
+	$d                                 0x00003968               0  .text.EXI2to3IntHandler
+	$d                                 0x0000396c               0  .text.EXI4to9IntHandler
+	$t                                 0x0000396c               0  .text.EXI4to9IntHandler
+	$d                                 0x000039c4               0  .text.EXI4to9IntHandler
+	$d                                 0x000039c8               0  .text.EXI10to15IntHandler
+	$t                                 0x000039c8               0  .text.EXI10to15IntHandler
+	$d                                 0x00003a24               0  .text.EXI10to15IntHandler
+	$d                                 0x00003a28               0  .text.LPTIntHandler
+	$t                                 0x00003a28               0  .text.LPTIntHandler
+	$d                                 0x00003a58               0  .text.LPTIntHandler
+	$d                                 0x00003a5c               0  .text.BT0IntHandler
+	$t                                 0x00003a5c               0  .text.BT0IntHandler
+	$d                                 0x00003aa8               0  .text.BT0IntHandler
+	$d                                 0x00003aac               0  .text.BT1IntHandler
+	$t                                 0x00003aac               0  .text.BT1IntHandler
+	$d                                 0x00003aec               0  .text.BT1IntHandler
+	$d                                 0x00003af4               0  .text.PriviledgeVioHandler
+	$t                                 0x00003af4               0  .text.PriviledgeVioHandler
+	$d                                 0x00003af6               0  .text.PendTrapHandler
+	$t                                 0x00003af6               0  .text.PendTrapHandler
+	$d                                 0x00003afe               0  .text.Trap3Handler
+	$t                                 0x00003afe               0  .text.Trap3Handler
+	$d                                 0x00003b06               0  .text.Trap2Handler
+	$t                                 0x00003b06               0  .text.Trap2Handler
+	$d                                 0x00003b0e               0  .text.Trap1Handler
+	$t                                 0x00003b0e               0  .text.Trap1Handler
+	$d                                 0x00003b16               0  .text.Trap0Handler
+	$t                                 0x00003b16               0  .text.Trap0Handler
+	$d                                 0x00003b1e               0  .text.UnrecExecpHandler
+	$t                                 0x00003b1e               0  .text.UnrecExecpHandler
+	$d                                 0x00003b26               0  .text.BreakPointHandler
+	$t                                 0x00003b26               0  .text.BreakPointHandler
+	$d                                 0x00003b2e               0  .text.AccessErrHandler
+	$t                                 0x00003b2e               0  .text.AccessErrHandler
+	$d                                 0x00003b36               0  .text.IllegalInstrHandler
+	$t                                 0x00003b36               0  .text.IllegalInstrHandler
+	$d                                 0x00003b3e               0  .text.MisalignedHandler
+	$t                                 0x00003b3e               0  .text.MisalignedHandler
+	$d                                 0x00003b46               0  .text.CNTAIntHandler
+	$t                                 0x00003b46               0  .text.CNTAIntHandler
+	$d                                 0x00003b4e               0  .text.I2CIntHandler
+	$t                                 0x00003b4e               0  .text.I2CIntHandler
+	$d                                 0x00003b58               0  .text.__divsi3
+	$t                                 0x00003b58               0  .text.__divsi3
+	$d                                 0x00003b78               0  .text.__divsi3
+	$d                                 0x00003b7c               0  .text.__udivsi3
+	$t                                 0x00003b7c               0  .text.__udivsi3
+	$d                                 0x00003b9c               0  .text.__udivsi3
+	$d                                 0x00003ba0               0  .text.__umodsi3
+	$t                                 0x00003ba0               0  .text.__umodsi3
+	$d                                 0x00003bc0               0  .text.__umodsi3
+	$d                                 0x00003bc4               0  .text.CK_CPU_EnAllNormalIrq
+	$t                                 0x00003bc4               0  .text.CK_CPU_EnAllNormalIrq
+	$d                                 0x00003bcc               0  .text.adc_conver
+	$t                                 0x00003bcc               0  .text.adc_conver
+	$d                                 0x00003bfc               0  .text.adc_conver
+	$t                                 0x00003c00               0  .text.adc_conver
+	$d                                 0x00003c44               0  .text.adc_conver
+	$t                                 0x00003c48               0  .text.adc_conver
+	$d                                 0x00003d44               0  .text.adc_conver
+	$d                                 0x00003d70               0  .text.adc_task
+	$t                                 0x00003d70               0  .text.adc_task
+	$d                                 0x00003d8c               0  .text.key_scan1
+	$t                                 0x00003d8c               0  .text.key_scan1
+	$d                                 0x00003de4               0  .text.key_scan1
+	$d                                 0x00003df0               0  .text.key_scan2
+	$t                                 0x00003df0               0  .text.key_scan2
+	$d                                 0x00003e48               0  .text.key_scan2
+	$d                                 0x00003e54               0  .text.key_scan3
+	$t                                 0x00003e54               0  .text.key_scan3
+	$d                                 0x00003eac               0  .text.key_scan3
+	$d                                 0x00003eb8               0  .text.task_key
+	$t                                 0x00003eb8               0  .text.task_key
+	$d                                 0x00003ed8               0  .text.task_key
+	$d                                 0x00003edc               0  .text.task_sys
+	$t                                 0x00003edc               0  .text.task_sys
+	$d                                 0x00003f4c               0  .text.task_sys
+	$d                                 0x00003f60               0  .text.cal_comput
+	$t                                 0x00003f60               0  .text.cal_comput
+	$d                                 0x00003f6c               0  .text.cal_comput
+	$t                                 0x00003f70               0  .text.cal_comput
+	$d                                 0x000040a0               0  .text.cal_comput
+	$d                                 0x000040e8               0  .text.Task_Marks_Handler_Callback
+	$t                                 0x000040e8               0  .text.Task_Marks_Handler_Callback
+	$d                                 0x0000411c               0  .text.Task_Marks_Handler_Callback
+	$d                                 0x00004120               0  .text.Task_Pro_Handler_Callback
+	$t                                 0x00004120               0  .text.Task_Pro_Handler_Callback
+	$d                                 0x0000414c               0  .text.Task_Pro_Handler_Callback
+	$d                                 0x00004150               0  .text.gui_home
+	$t                                 0x00004150               0  .text.gui_home
+	$d                                 0x0000422c               0  .text.gui_home
+	$d                                 0x00004240               0  .text.gui_set
+	$t                                 0x00004240               0  .text.gui_set
+	$d                                 0x000042d4               0  .text.gui_set
+	$d                                 0x000042ec               0  .text.gui_option2
+	$t                                 0x000042ec               0  .text.gui_option2
+	$d                                 0x00004318               0  .text.gui_option2
+	$d                                 0x00004320               0  .text.gui_calibration
+	$t                                 0x00004320               0  .text.gui_calibration
+	$d                                 0x0000437a               0  .text.gui_calibration
+	$t                                 0x0000437e               0  .text.gui_calibration
+	$d                                 0x000043b2               0  .text.gui_calibration
+	$t                                 0x000043ba               0  .text.gui_calibration
+	$d                                 0x00004600               0  .text.gui_calibration
+	$d                                 0x0000464c               0  .text.task_gui
+	$t                                 0x0000464c               0  .text.task_gui
+	$d                                 0x000046e0               0  .text.task_gui
+	$d                                 0x000046f0               0  .text.LCD_Fill
+	$t                                 0x000046f0               0  .text.LCD_Fill
+	$d                                 0x00004728               0  .text.LCD_DrawPoint
+	$t                                 0x00004728               0  .text.LCD_DrawPoint
+	$d                                 0x0000473c               0  .text.LCD_ShowChar
+	$t                                 0x0000473c               0  .text.LCD_ShowChar
+	$d                                 0x00004858               0  .text.LCD_ShowChar
+	$d                                 0x00004868               0  .text.LCD_ShowString
+	$t                                 0x00004868               0  .text.LCD_ShowString
+	$d                                 0x000048a8               0  .text.LCD_ShowIntNum
+	$t                                 0x000048a8               0  .text.LCD_ShowIntNum
+	$d                                 0x00004944               0  .text.LCD_WR_DATA8
+	$t                                 0x00004944               0  .text.LCD_WR_DATA8
+	$d                                 0x00004960               0  .text.LCD_WR_DATA8
+	$d                                 0x00004964               0  .text.LCD_WR_DATA
+	$t                                 0x00004964               0  .text.LCD_WR_DATA
+	$d                                 0x00004998               0  .text.LCD_WR_DATA
+	$d                                 0x0000499c               0  .text.LCD_WR_REG
+	$t                                 0x0000499c               0  .text.LCD_WR_REG
+	$d                                 0x000049d0               0  .text.LCD_WR_REG
+	$d                                 0x000049d8               0  .text.LCD_Address_Set
+	$t                                 0x000049d8               0  .text.LCD_Address_Set
+	$d                                 0x00004a10               0  .text.LCD_Init
+	$t                                 0x00004a10               0  .text.LCD_Init
+	$d                                 0x00004c58               0  .text.LCD_Init
+	TK_ConfigInterrupt_CMD.part.0      0x00004c5c      F       16  .text.TK_ConfigInterrupt_CMD.part.0
+	$d                                 0x00004c5c               0  .text.TK_ConfigInterrupt_CMD.part.0
+	$t                                 0x00004c5c               0  .text.TK_ConfigInterrupt_CMD.part.0
+	$d                                 0x00004c68               0  .text.TK_ConfigInterrupt_CMD.part.0
+	$d                                 0x00004c6c               0  .text.tk_clk_config
+	$t                                 0x00004c6c               0  .text.tk_clk_config
+	$d                                 0x00004c90               0  .text.tk_clk_config
+	$d                                 0x00004c94               0  .text.TK_con0_config
+	$t                                 0x00004c94               0  .text.TK_con0_config
+	$d                                 0x00004d44               0  .text.TK_con0_config
+	$d                                 0x00004d50               0  .text.TK_IO_Enable
+	$t                                 0x00004d50               0  .text.TK_IO_Enable
+	$d                                 0x00004d94               0  .text.TK_IO_Enable
+	$t                                 0x00004da4               0  .text.TK_IO_Enable
+	$d                                 0x00004e78               0  .text.TK_IO_Enable
+	$d                                 0x00004e84               0  .text.TK_Sampling_prog
+	$t                                 0x00004e84               0  .text.TK_Sampling_prog
+	$d                                 0x00004f2c               0  .text.TK_Sampling_prog
+	$d                                 0x00004f50               0  .text.TKEYIntHandler
+	$t                                 0x00004f50               0  .text.TKEYIntHandler
+	$d                                 0x00004fe0               0  .text.TKEYIntHandler
+	$d                                 0x00004ff0               0  .text.get_key_number
+	$t                                 0x00004ff0               0  .text.get_key_number
+	$d                                 0x00005014               0  .text.get_key_number
+	$d                                 0x00005018               0  .text.TK_Baseline_prog
+	$t                                 0x00005018               0  .text.TK_Baseline_prog
+	$d                                 0x00005124               0  .text.TK_Baseline_prog
+	$d                                 0x00005154               0  .text.TK_Scan_Start
+	$t                                 0x00005154               0  .text.TK_Scan_Start
+	$d                                 0x0000519c               0  .text.TK_Scan_Start
+	$d                                 0x000051ac               0  .text.TK_Keymap_prog
+	$t                                 0x000051ac               0  .text.TK_Keymap_prog
+	$d                                 0x000054ec               0  .text.TK_Keymap_prog
+	$t                                 0x0000556c               0  .text.TK_Keymap_prog
+	$d                                 0x00005590               0  .text.TK_Keymap_prog
+	$d                                 0x00005594               0  .text.TK_overflow_predict
+	$t                                 0x00005594               0  .text.TK_overflow_predict
+	$d                                 0x00005674               0  .text.TK_overflow_predict
+	$d                                 0x000056a8               0  .text.TK_Baseline_tracking
+	$t                                 0x000056a8               0  .text.TK_Baseline_tracking
+	$d                                 0x00005a04               0  .text.TK_Baseline_tracking
+	$t                                 0x00005a54               0  .text.TK_Baseline_tracking
+	$d                                 0x00005b9c               0  .text.TK_Baseline_tracking
+	$d                                 0x00005bac               0  .text.TK_result_prog
+	$t                                 0x00005bac               0  .text.TK_result_prog
+	$d                                 0x00005c8c               0  .text.TK_result_prog
+	$d                                 0x00005ca8               0  .text.CORETHandler
+	$t                                 0x00005ca8               0  .text.CORETHandler
+	$d                                 0x00005d08               0  .text.CORETHandler
+	$d                                 0x00005d20               0  .text.get_key_seq
+	$t                                 0x00005d20               0  .text.get_key_seq
+	$d                                 0x00005d4c               0  .text.get_key_seq
+	$d                                 0x00005d54               0  .text.CORET_CONFIG
+	$t                                 0x00005d54               0  .text.CORET_CONFIG
+	$d                                 0x00005d84               0  .text.CORET_CONFIG
+	$d                                 0x00005d8c               0  .text.tk_chxval_seqxcon_clr
+	$t                                 0x00005d8c               0  .text.tk_chxval_seqxcon_clr
+	$d                                 0x00005da4               0  .text.tk_chxval_seqxcon_clr
+	$d                                 0x00005da8               0  .text.tk_init
+	$t                                 0x00005da8               0  .text.tk_init
+	$d                                 0x00005e9c               0  .text.tk_init
+	$t                                 0x00005ea2               0  .text.tk_init
+	$d                                 0x00005ef8               0  .text.tk_init
+	$d                                 0x00005f64               0  .text.std_clk_calib
+	$t                                 0x00005f64               0  .text.std_clk_calib
+	$d                                 0x000061ac               0  .text.std_clk_calib
+	bp                                 0x000095dc      O       16  .rodata
+	dp_l                               0x000095ec      O       16  .rodata
+	dp_h                               0x000095fc      O       16  .rodata
+	Task_Comps                         0x2000006c      O       36  .data
+	key_lock.2707                      0x20000108      O        1  .bss
+	press_cnt.2708                     0x2000010c      O        4  .bss
+	short_press.2709                   0x20000110      O        1  .bss
+	key_lock.2714                      0x20000111      O        1  .bss
+	press_cnt.2715                     0x20000114      O        4  .bss
+	short_press.2716                   0x20000118      O        1  .bss
+	key_lock.2721                      0x20000119      O        1  .bss
+	press_cnt.2722                     0x2000011c      O        4  .bss
+	short_press.2723                   0x20000120      O        1  .bss
+	t.2728                             0x20000121      O        1  .bss
+	t.3522                             0x2000015b      O        1  .bss
+
+	Global Symbols
+
+	Symbol Name                        Value        Type   Size  Section
+	vector_table                       0x00000000               0  .text
+	__start                            0x0000010c               0  .text
+	__exit                             0x00000160               0  .text
+	__fail                             0x00000176               0  .text
+	DummyHandler                       0x00000184               0  .text
+	__GI_pow                           0x000001b4      F     2474  .text
+	pow                                0x000001b4      F     2474  .text
+	__GI_fabs                          0x00000b5e      F        6  .text
+	fabs                               0x00000b5e      F        6  .text
+	__GI_scalbn                        0x00000b64      F       32  .text
+	scalbn                             0x00000b64      F       32  .text
+	__GI_sqrt                          0x00000b84      F      376  .text
+	sqrt                               0x00000b84      F      376  .text
+	___gnu_csky_case_uqi               0x00000cfc      F       20  .text
+	___gnu_csky_case_uhi               0x00000d10      F       26  .text
+	__fixunssfsi                       0x00000d2c      F       46  .text
+	__fixunsdfsi                       0x00000d5c      F       56  .text
+	__addsf3                           0x00000ee0      F       42  .text
+	__subsf3                           0x00000f0c      F       50  .text
+	__mulsf3                           0x00000f40      F      280  .text
+	__gesf2                            0x00001058      F       56  .text
+	__floatsisf                        0x00001090      F      100  .text
+	__fixsfsi                          0x000010f4      F       84  .text
+	__adddf3                           0x0000141c      F       46  .text
+	__subdf3                           0x0000144c      F       54  .text
+	__muldf3                           0x00001484      F      564  .text
+	__divdf3                           0x000016b8      F      340  .text
+	__gtdf2                            0x0000180c      F       60  .text
+	__gedf2                            0x00001848      F       60  .text
+	__ledf2                            0x00001884      F       58  .text
+	__floatsidf                        0x000018c0      F      112  .text
+	__fixdfsi                          0x00001930      F      112  .text
+	__truncdfsf2                       0x000019a0      F       48  .text
+	__floatunsidf                      0x000019d0      F       84  .text
+	__muldi3                           0x00001a24      F       68  .text
+	__clzsi2                           0x00001a68      F       64  .text
+	__pack_f                           0x00001aa8      F      184  .text
+	__unpack_f                         0x00001b60      F      132  .text
+	__fpcmp_parts_f                    0x00001be4      F      120  .text
+	__make_fp                          0x00001c5c      F       22  .text
+	__pack_d                           0x00001c74      F      412  .text
+	__unpack_d                         0x00001e10      F      196  .text
+	__fpcmp_parts_d                    0x00001ed4      F      140  .text
+	__memset_fast                      0x00001f60    w F      136  .text
+	memset                             0x00001f60    w F      136  .text
+	__memcpy_fast                      0x00001fe8    w F      100  .text
+	memcpy                             0x00001fe8    w F      100  .text
+	__main                             0x0000204c      F       56  .text.__main
+	__putchar__                        0x00002084      F       20  .text.__putchar__
+	myitoa                             0x00002098      F      140  .text.myitoa
+	my_printf                          0x00002124      F      198  .text.my_printf
+	ADC12_Control                      0x000021ec      F       16  .text.ADC12_Control
+	ADC12_CLK_CMD                      0x0000221c      F       44  .text.ADC12_CLK_CMD
+	ADC12_Software_Reset               0x00002248      F       10  .text.ADC12_Software_Reset
+	ADC12_CMD                          0x00002254      F       40  .text.ADC12_CMD
+	ADC12_ready_wait                   0x0000227c      F       20  .text.ADC12_ready_wait
+	ADC12_SEQEND_wait                  0x00002290      F       24  .text.ADC12_SEQEND_wait
+	ADC12_Configure_Mode               0x000022a8      F      124  .text.ADC12_Configure_Mode
+	ADC12_Configure_VREF_Selecte       0x00002324      F      408  .text.ADC12_Configure_VREF_Selecte
+	ADC12_ConversionChannel_Config     0x000024bc      F      384  .text.ADC12_ConversionChannel_Config
+	BT_DeInit                          0x0000263c      F       28  .text.BT_DeInit
+	BT_Start                           0x00002658      F        8  .text.BT_Start
+	BT_Soft_Reset                      0x00002660      F       10  .text.BT_Soft_Reset
+	BT_Configure                       0x0000266a      F       24  .text.BT_Configure
+	BT_ControlSet_Configure            0x00002682      F       44  .text.BT_ControlSet_Configure
+	BT_Period_CMP_Write                0x000026ae      F        6  .text.BT_Period_CMP_Write
+	BT_ConfigInterrupt_CMD             0x000026b4      F       18  .text.BT_ConfigInterrupt_CMD
+	BT0_INT_ENABLE                     0x000026c8      F       16  .text.BT0_INT_ENABLE
+	CORET_DeInit                       0x000026d8      F       24  .text.CORET_DeInit
+	CORET_Int_Enable                   0x000026f0      F       24  .text.CORET_Int_Enable
+	CORET_start                        0x00002708      F       16  .text.CORET_start
+	CORET_CLKSOURCE_EX                 0x00002718      F       16  .text.CORET_CLKSOURCE_EX
+	CORET_TICKINT_Enable               0x00002728      F       16  .text.CORET_TICKINT_Enable
+	CORET_reload                       0x00002738      F       16  .text.CORET_reload
+	GPIO_Init                          0x00002748      F      224  .text.GPIO_Init
+	GPIO_Write_High                    0x00002828      F        8  .text.GPIO_Write_High
+	GPIO_Write_Low                     0x00002830      F        8  .text.GPIO_Write_Low
+	Page_ProgramData                   0x00002838      F      160  .text.Page_ProgramData
+	ReadDataArry                       0x000028d8      F       46  .text.ReadDataArry
+	LPT_Soft_Reset                     0x00002908      F       20  .text.LPT_Soft_Reset
+	SPI_DeInit                         0x0000291c      F       32  .text.SPI_DeInit
+	SPI_NSS_IO_Init                    0x0000293c      F       52  .text.SPI_NSS_IO_Init
+	SPI_Master_Init                    0x00002970      F      176  .text.SPI_Master_Init
+	SPI_ConfigInterrupt_CMD            0x00002a20      F       28  .text.SPI_ConfigInterrupt_CMD
+	SPI_Int_Enable                     0x00002a3c      F       16  .text.SPI_Int_Enable
+	SYSCON_RST_VALUE                   0x00002ac0      F       88  .text.SYSCON_RST_VALUE
+	SYSCON_General_CMD                 0x00002b18      F       48  .text.SYSCON_General_CMD
+	SystemCLK_HCLKDIV_PCLKDIV_Config   0x00002b48      F      120  .text.SystemCLK_HCLKDIV_PCLKDIV_Config
+	SYSCON_HFOSC_SELECTE               0x00002bc0      F       40  .text.SYSCON_HFOSC_SELECTE
+	SYSCON_WDT_CMD                     0x00002be8      F       60  .text.SYSCON_WDT_CMD
+	SYSCON_IWDCNT_Reload               0x00002c24      F       20  .text.SYSCON_IWDCNT_Reload
+	SYSCON_IWDCNT_Config               0x00002c38      F       24  .text.SYSCON_IWDCNT_Config
+	SYSCON_LVD_Config                  0x00002c50      F       32  .text.SYSCON_LVD_Config
+	LVD_Int_Enable                     0x00002c70      F       28  .text.LVD_Int_Enable
+	EXTI_trigger_CMD                   0x00002c8c      F       64  .text.EXTI_trigger_CMD
+	SYSCON_Int_Enable                  0x00002ccc      F       12  .text.SYSCON_Int_Enable
+	tk_parameter_init                  0x00002cd8      F      284  .text.tk_parameter_init
+	UART1_DeInit                       0x00002df4      F       24  .text.UART1_DeInit
+	UART_IO_Init                       0x00002e0c      F      216  .text.UART_IO_Init
+	UARTInit                           0x00002ee4      F       10  .text.UARTInit
+	UARTTxByte                         0x00002eee      F       14  .text.UARTTxByte
+	WWDT_CONFIG                        0x00002efc      F       24  .text.WWDT_CONFIG
+	WWDT_CNT_Load                      0x00002f14      F       16  .text.WWDT_CNT_Load
+	WWDT_Int_Config                    0x00002f24      F       52  .text.WWDT_Int_Config
+	main                               0x00002f58      F      184  .text.startup.main
+	delay_nms                          0x00003010      F       44  .text.delay_nms
+	GPIO_CONFIG                        0x0000303c      F      108  .text.GPIO_CONFIG
+	BT_CONFIG                          0x000030a8      F       96  .text.BT_CONFIG
+	SPI_MASTER_CONFIG                  0x00003108      F       56  .text.SPI_MASTER_CONFIG
+	UART1_CONFIG                       0x00003140      F       32  .text.UART1_CONFIG
+	SYSCON_CONFIG                      0x00003160      F      116  .text.SYSCON_CONFIG
+	APT32F102_init                     0x000031d4      F       60  .text.APT32F102_init
+	SYSCONIntHandler                   0x00003210      F      248  .text.SYSCONIntHandler
+	IFCIntHandler                      0x00003308      F      104  .text.IFCIntHandler
+	ADCIntHandler                      0x00003370      F      104  .text.ADCIntHandler
+	EPT0IntHandler                     0x000033d8      F      424  .text.EPT0IntHandler
+	WWDTHandler                        0x00003580      F       52  .text.WWDTHandler
+	GPT0IntHandler                     0x000035b4      F      128  .text.GPT0IntHandler
+	RTCIntHandler                      0x00003634      F      112  .text.RTCIntHandler
+	UART0IntHandler                    0x000036a4      F       60  .text.UART0IntHandler
+	UART1IntHandler                    0x000036e0      F       60  .text.UART1IntHandler
+	UART2IntHandler                    0x0000371c      F       60  .text.UART2IntHandler
+	SPI0IntHandler                     0x00003758      F      232  .text.SPI0IntHandler
+	SIO0IntHandler                     0x00003840      F      132  .text.SIO0IntHandler
+	EXI0IntHandler                     0x000038c4      F       48  .text.EXI0IntHandler
+	EXI1IntHandler                     0x000038f4      F       48  .text.EXI1IntHandler
+	EXI2to3IntHandler                  0x00003924      F       72  .text.EXI2to3IntHandler
+	EXI4to9IntHandler                  0x0000396c      F       92  .text.EXI4to9IntHandler
+	EXI10to15IntHandler                0x000039c8      F       96  .text.EXI10to15IntHandler
+	LPTIntHandler                      0x00003a28      F       52  .text.LPTIntHandler
+	BT0IntHandler                      0x00003a5c      F       80  .text.BT0IntHandler
+	BT1IntHandler                      0x00003aac      F       72  .text.BT1IntHandler
+	PriviledgeVioHandler               0x00003af4      F        2  .text.PriviledgeVioHandler
+	PendTrapHandler                    0x00003af6      F        8  .text.PendTrapHandler
+	Trap3Handler                       0x00003afe      F        8  .text.Trap3Handler
+	Trap2Handler                       0x00003b06      F        8  .text.Trap2Handler
+	Trap1Handler                       0x00003b0e      F        8  .text.Trap1Handler
+	Trap0Handler                       0x00003b16      F        8  .text.Trap0Handler
+	UnrecExecpHandler                  0x00003b1e      F        8  .text.UnrecExecpHandler
+	BreakPointHandler                  0x00003b26      F        8  .text.BreakPointHandler
+	AccessErrHandler                   0x00003b2e      F        8  .text.AccessErrHandler
+	IllegalInstrHandler                0x00003b36      F        8  .text.IllegalInstrHandler
+	MisalignedHandler                  0x00003b3e      F        8  .text.MisalignedHandler
+	CNTAIntHandler                     0x00003b46      F        8  .text.CNTAIntHandler
+	I2CIntHandler                      0x00003b4e      F        8  .text.I2CIntHandler
+	__divsi3                           0x00003b58      F       36  .text.__divsi3
+	__udivsi3                          0x00003b7c      F       36  .text.__udivsi3
+	__umodsi3                          0x00003ba0      F       36  .text.__umodsi3
+	CK_CPU_EnAllNormalIrq              0x00003bc4      F        6  .text.CK_CPU_EnAllNormalIrq
+	adc_conver                         0x00003bcc      F      420  .text.adc_conver
+	adc_task                           0x00003d70      F       28  .text.adc_task
+	key_scan1                          0x00003d8c      F      100  .text.key_scan1
+	key_scan2                          0x00003df0      F      100  .text.key_scan2
+	key_scan3                          0x00003e54      F      100  .text.key_scan3
+	task_key                           0x00003eb8      F       36  .text.task_key
+	task_sys                           0x00003edc      F      132  .text.task_sys
+	cal_comput                         0x00003f60      F      392  .text.cal_comput
+	Task_Marks_Handler_Callback        0x000040e8      F       56  .text.Task_Marks_Handler_Callback
+	Task_Pro_Handler_Callback          0x00004120      F       48  .text.Task_Pro_Handler_Callback
+	gui_home                           0x00004150      F      240  .text.gui_home
+	gui_set                            0x00004240      F      172  .text.gui_set
+	gui_option2                        0x000042ec      F       52  .text.gui_option2
+	gui_calibration                    0x00004320      F      812  .text.gui_calibration
+	task_gui                           0x0000464c      F      164  .text.task_gui
+	LCD_Fill                           0x000046f0      F       56  .text.LCD_Fill
+	LCD_DrawPoint                      0x00004728      F       20  .text.LCD_DrawPoint
+	LCD_ShowChar                       0x0000473c      F      300  .text.LCD_ShowChar
+	LCD_ShowString                     0x00004868      F       64  .text.LCD_ShowString
+	LCD_ShowIntNum                     0x000048a8      F      156  .text.LCD_ShowIntNum
+	LCD_WR_DATA8                       0x00004944      F       32  .text.LCD_WR_DATA8
+	LCD_WR_DATA                        0x00004964      F       56  .text.LCD_WR_DATA
+	LCD_WR_REG                         0x0000499c      F       60  .text.LCD_WR_REG
+	LCD_Address_Set                    0x000049d8      F       56  .text.LCD_Address_Set
+	LCD_Init                           0x00004a10      F      588  .text.LCD_Init
+	tk_clk_config                      0x00004c6c      F       40  .text.tk_clk_config
+	TK_con0_config                     0x00004c94      F      188  .text.TK_con0_config
+	TK_IO_Enable                       0x00004d50      F      308  .text.TK_IO_Enable
+	TK_Sampling_prog                   0x00004e84      F      204  .text.TK_Sampling_prog
+	TKEYIntHandler                     0x00004f50      F      160  .text.TKEYIntHandler
+	get_key_number                     0x00004ff0      F       40  .text.get_key_number
+	TK_Baseline_prog                   0x00005018      F      316  .text.TK_Baseline_prog
+	TK_Scan_Start                      0x00005154      F       88  .text.TK_Scan_Start
+	TK_Keymap_prog                     0x000051ac      F     1000  .text.TK_Keymap_prog
+	TK_overflow_predict                0x00005594      F      276  .text.TK_overflow_predict
+	TK_Baseline_tracking               0x000056a8      F     1284  .text.TK_Baseline_tracking
+	TK_result_prog                     0x00005bac      F      252  .text.TK_result_prog
+	CORETHandler                       0x00005ca8      F      120  .text.CORETHandler
+	get_key_seq                        0x00005d20      F       52  .text.get_key_seq
+	CORET_CONFIG                       0x00005d54      F       56  .text.CORET_CONFIG
+	tk_chxval_seqxcon_clr              0x00005d8c      F       28  .text.tk_chxval_seqxcon_clr
+	tk_init                            0x00005da8      F      428  .text.tk_init
+	std_clk_calib                      0x00005f64      F      644  .text.std_clk_calib
+	ascii_1206                         0x000061e8      O     1140  .rodata
+	ascii_1608                         0x0000665c      O     1520  .rodata
+	ascii_2412                         0x00006c4c      O     4560  .rodata
+	ascii_3216                         0x00007e1c      O     6080  .rodata
+	tfont12                            0x000095dc      O        0  .rodata
+	tfont16                            0x000095dc      O        0  .rodata
+	tfont24                            0x000095dc      O        0  .rodata
+	tfont32                            0x000095dc      O        0  .rodata
+	__thenan_sf                        0x0000960c      O       16  .rodata
+	__thenan_df                        0x0000961c      O       20  .rodata
+	__clz_tab                          0x00009630      O      256  .rodata
+	_end_rodata                        0x0000979c               0  .rodata
+	HWD                                0x20000000      O        4  .data
+	_start_data                        0x20000000               0  .data
+	CRC                                0x20000004      O        4  .data
+	BT1                                0x20000008      O        4  .data
+	BT0                                0x2000000c      O        4  .data
+	WWDT                               0x20000010      O        4  .data
+	LPT                                0x20000014      O        4  .data
+	RTC                                0x20000018      O        4  .data
+	ETCB                               0x2000001c      O        4  .data
+	EPT0                               0x20000020      O        4  .data
+	GPT0                               0x20000024      O        4  .data
+	CA0                                0x20000028      O        4  .data
+	SIO0                               0x2000002c      O        4  .data
+	I2C0                               0x20000030      O        4  .data
+	SPI0                               0x20000034      O        4  .data
+	UART2                              0x20000038      O        4  .data
+	UART1                              0x2000003c      O        4  .data
+	UART0                              0x20000040      O        4  .data
+	GPIOGRP                            0x20000044      O        4  .data
+	GPIOB0                             0x20000048      O        4  .data
+	GPIOA0                             0x2000004c      O        4  .data
+	ADC0                               0x20000050      O        4  .data
+	TKEYBUF                            0x20000054      O        4  .data
+	TKEY                               0x20000058      O        4  .data
+	SYSCON                             0x2000005c      O        4  .data
+	IFC                                0x20000060      O        4  .data
+	CK801                              0x20000064      O        4  .data
+	Tasks_Max                          0x20000068      O        1  .data
+	key_table                          0x20000090      O       48  .data
+	s_tkey                             0x200000c0      O        4  .data
+	samp_setover_f                     0x200000c4      O        1  .data
+	TK_Scan_Freq2                      0x200000c8      O        4  .data
+	TK_Scan_Freq1                      0x200000cc      O        4  .data
+	TK_Scan_Freq0                      0x200000d0      O        4  .data
+	scan_step_temp                     0x200000d4      O        1  .data
+	tk_div                             0x200000d6      O       34  .data
+	_end_data                          0x200000f8               0  .data
+	_bss_start                         0x200000f8               0  .bss
+	adc_result_direct                  0x200000f8      O        8  .bss
+	adc_result_conver                  0x20000100      O        8  .bss
+	uart_tx_cnt                        0x20000124      O        2  .bss
+	cal_0_AD2                          0x20000126      O        2  .bss
+	cal_0_AD0                          0x20000128      O        2  .bss
+	led_blink_cnt                      0x2000012a      O        2  .bss
+	cal_1_AD2                          0x2000012c      O        2  .bss
+	cal_1_AD0                          0x2000012e      O        2  .bss
+	cal_2_AD2                          0x20000130      O        2  .bss
+	cal_2_AD0                          0x20000132      O        2  .bss
+	cal_3_AD2                          0x20000134      O        2  .bss
+	cal_3_AD0                          0x20000136      O        2  .bss
+	cal_3_b                            0x20000138      O        4  .bss
+	cal_3_a                            0x2000013c      O        4  .bss
+	cal_2_b                            0x20000140      O        4  .bss
+	cal_2_a                            0x20000144      O        4  .bss
+	cal_1_b                            0x20000148      O        4  .bss
+	cal_1_a                            0x2000014c      O        4  .bss
+	cal_0_b                            0x20000150      O        4  .bss
+	cal_0_a                            0x20000154      O        4  .bss
+	gui_arguments                      0x20000158      O        2  .bss
+	cal_ok                             0x2000015a      O        1  .bss
+	index                              0x2000015c      O        1  .bss
+	index_last                         0x2000015d      O        1  .bss
+	Press_debounce_data                0x20000160      O        1  .bss
+	TK_Lowpower_mode                   0x20000161      O        1  .bss
+	TK_Lowpower_level                  0x20000162      O        1  .bss
+	TK_longpress_time                  0x20000164      O        4  .bss
+	Release_debounce_data              0x20000168      O        1  .bss
+	Key_mode                           0x20000169      O        1  .bss
+	TK_icon                            0x2000016a      O       34  .bss
+	MultiTimes_Filter                  0x2000018c      O        1  .bss
+	Base_Speed                         0x2000018d      O        1  .bss
+	TK_IO_ENABLE                       0x20000190      O        4  .bss
+	Valid_Key_Num                      0x20000194      O        1  .bss
+	TK_senprd                          0x20000196      O       34  .bss
+	TK_Wakeup_level                    0x200001b8      O        1  .bss
+	TK_Triggerlevel                    0x200001ba      O       34  .bss
+	TK_EC_LEVEL                        0x200001dc      O        2  .bss
+	TK_FVR_LEVEL                       0x200001de      O        2  .bss
+	TK_BaseCnt                         0x200001e0      O        4  .bss
+	TK_PSEL_MODE                       0x200001e4      O        2  .bss
+	R_CMPB_BUF                         0x200001e8      O        4  .bss
+	R_SIOTX_count                      0x200001ec      O        4  .bss
+	R_CMPA_BUF                         0x200001f0      O        4  .bss
+	R_SIORX_count                      0x200001f4      O        4  .bss
+	R_SIORX_buf                        0x200001f8      O       40  .bss
+	stKEY                              0x20000220      O        1  .bss
+	cal3_a                             0x20000224      O        4  .bss
+	cal2_b                             0x20000228      O        4  .bss
+	cal1_b                             0x2000022c      O        4  .bss
+	cal0_a                             0x20000230      O        4  .bss
+	cal3_b                             0x20000234      O        4  .bss
+	cal1_a                             0x20000238      O        4  .bss
+	cal0_b                             0x2000023c      O        4  .bss
+	cal2_a                             0x20000240      O        4  .bss
+	baseline_data0                     0x20000244      O       34  .bss
+	TK_Postive_build2                  0x20000266      O       17  .bss
+	Key_Map1                           0x20000278      O        4  .bss
+	offset_data2_abs                   0x2000027c      O       34  .bss
+	scan_f                             0x2000029e      O        1  .bss
+	offset_data1_abs                   0x200002a0      O       34  .bss
+	Release_debounce0                  0x200002c2      O       17  .bss
+	Key_Map0                           0x200002d4      O        4  .bss
+	bsae_over_f                        0x200002d8      O        1  .bss
+	scan_cnt                           0x200002da      O        2  .bss
+	Press_debounce0                    0x200002dc      O       17  .bss
+	offset_data0                       0x200002ee      O       34  .bss
+	sampling_data1                     0x20000310      O       34  .bss
+	Key_Map2                           0x20000334      O        4  .bss
+	Release_debounce1                  0x20000338      O       17  .bss
+	tk_overflow_f                      0x20000349      O        1  .bss
+	TK_Negtive_build2                  0x2000034a      O       17  .bss
+	base_update_f                      0x2000035b      O        1  .bss
+	TK_Postive_build1                  0x2000035c      O       17  .bss
+	time_cnt                           0x20000370      O        4  .bss
+	lpt_scan_pend_cnt                  0x20000374      O        2  .bss
+	TK_track_cnt                       0x20000376      O        1  .bss
+	Key_Map                            0x20000378      O        4  .bss
+	baseline_data1                     0x2000037c      O       34  .bss
+	TK_Postive_build0                  0x2000039e      O       17  .bss
+	sampling_data2                     0x200003b0      O       34  .bss
+	offset_data1                       0x200003d2      O       34  .bss
+	TK_ovrdect_cnt                     0x200003f4      O        1  .bss
+	Press_debounce2                    0x200003f5      O       17  .bss
+	TK_Negtive_build1                  0x20000406      O       17  .bss
+	tk_num                             0x20000417      O        1  .bss
+	TK_Negtive_build0                  0x20000418      O       17  .bss
+	Press_debounce1                    0x20000429      O       17  .bss
+	Release_debounce2                  0x2000043a      O       17  .bss
+	r_Key_Map_Temp                     0x2000044c      O        4  .bss
+	tk_seque                           0x20000450      O       17  .bss
+	scan_step                          0x20000461      O        1  .bss
+	baseline_data2                     0x20000462      O       34  .bss
+	tk_sampling_max                    0x20000484      O       34  .bss
+	offset_data0_abs                   0x200004a6      O       34  .bss
+	offset_data2                       0x200004c8      O       34  .bss
+	sampling_data0                     0x200004ea      O       34  .bss
+	_ebss                              0x2000050c               0  .bss
+	_end                               0x2000050c               0  .bss
+	end                                0x2000050c               0  .bss
+	__kernel_stack                     0x20000ff8               0  .text
+
+	(w:Weak    d:Deubg    F:Function    f:File name    O:Zero)
+
+
+======================================================================
+
+Memory Map of the image
+
+    Image Entry point : 0x0000010c
+
+    Region ROM (Base: 0x00000000, Size: 0x0000979c, Max: 0x00010000)
+
+    Base Addr    Size         Type   Attr      Idx   Section Name       Object
+    0x00000000   0x000001b4   Code   RO         16  .text          	Obj/arch_crt0.o
+    0x000001b4   0x000009aa   Code   RO       1102  .text          	pow.o
+    0x00000b5e   0x00000006   Code   RO       1110  .text          	fabs.o
+    0x00000b64   0x00000020   Code   RO       1116  .text          	scalbn.o
+    0x00000b84   0x00000178   Code   RO       1123  .text          	sqrt.o
+    0x00000cfc   0x00000014   Code   RO       1134  .text          	_csky_case_uqi.o
+    0x00000d10   0x0000001a   Code   RO       1139  .text          	_csky_case_uhi.o
+    0x00000d2a   0x00000002   PAD
+    0x00000d2c   0x0000002e   Code   RO       1144  .text          	_fixunssfsi.o
+    0x00000d5a   0x00000002   PAD
+    0x00000d5c   0x00000038   Code   RO       1151  .text          	_fixunsdfsi.o
+    0x00000d94   0x000001aa   Code   RO       1158  .text          	_addsub_sf.o
+    0x00000f3e   0x00000002   PAD
+    0x00000f40   0x00000118   Code   RO       1165  .text          	_mul_sf.o
+    0x00001058   0x00000038   Code   RO       1172  .text          	_ge_sf.o
+    0x00001090   0x00000064   Code   RO       1179  .text          	_si_to_sf.o
+    0x000010f4   0x00000054   Code   RO       1186  .text          	_sf_to_si.o
+    0x00001148   0x0000033a   Code   RO       1200  .text          	_addsub_df.o
+    0x00001482   0x00000002   PAD
+    0x00001484   0x00000234   Code   RO       1207  .text          	_mul_df.o
+    0x000016b8   0x00000154   Code   RO       1214  .text          	_div_df.o
+    0x0000180c   0x0000003c   Code   RO       1221  .text          	_gt_df.o
+    0x00001848   0x0000003c   Code   RO       1228  .text          	_ge_df.o
+    0x00001884   0x0000003a   Code   RO       1235  .text          	_le_df.o
+    0x000018be   0x00000002   PAD
+    0x000018c0   0x00000070   Code   RO       1242  .text          	_si_to_df.o
+    0x00001930   0x00000070   Code   RO       1249  .text          	_df_to_si.o
+    0x000019a0   0x00000030   Code   RO       1256  .text          	_df_to_sf.o
+    0x000019d0   0x00000054   Code   RO       1270  .text          	_usi_to_df.o
+    0x00001a24   0x00000044   Code   RO       1277  .text          	_muldi3.o
+    0x00001a68   0x00000040   Code   RO       1284  .text          	_clzsi2.o
+    0x00001aa8   0x000000b8   Code   RO       1290  .text          	_pack_sf.o
+    0x00001b60   0x00000084   Code   RO       1297  .text          	_unpack_sf.o
+    0x00001be4   0x00000078   Code   RO       1304  .text          	_fpcmp_parts_sf.o
+    0x00001c5c   0x00000016   Code   RO       1311  .text          	_make_sf.o
+    0x00001c72   0x00000002   PAD
+    0x00001c74   0x0000019c   Code   RO       1318  .text          	_pack_df.o
+    0x00001e10   0x000000c4   Code   RO       1325  .text          	_unpack_df.o
+    0x00001ed4   0x0000008c   Code   RO       1332  .text          	_fpcmp_parts_df.o
+    0x00001f60   0x00000088   Code   RO       1353  .text          	memset_fast.o
+    0x00001fe8   0x00000064   Code   RO       1358  .text          	memcpy_fast.o
+    0x0000204c   0x00000038   Code   RO         28  .text.__main   	Obj/arch_mem_init.o
+    0x00002084   0x00000014   Code   RO         43  .text.__putchar__	Obj/arch_apt32f102a_iostring.o
+    0x00002098   0x0000008c   Code   RO         44  .text.myitoa   	Obj/arch_apt32f102a_iostring.o
+    0x00002124   0x000000c6   Code   RO         45  .text.my_printf	Obj/arch_apt32f102a_iostring.o
+    0x000021ec   0x00000010   Code   RO         62  .text.ADC12_Control	Obj/FWlib_apt32f102a_adc.o
+    0x000021fc   0x00000020   Code   RO         63  .text.ADC12_CMD.part.0	Obj/FWlib_apt32f102a_adc.o
+    0x0000221c   0x0000002c   Code   RO         66  .text.ADC12_CLK_CMD	Obj/FWlib_apt32f102a_adc.o
+    0x00002248   0x0000000a   Code   RO         67  .text.ADC12_Software_Reset	Obj/FWlib_apt32f102a_adc.o
+    0x00002254   0x00000028   Code   RO         68  .text.ADC12_CMD	Obj/FWlib_apt32f102a_adc.o
+    0x0000227c   0x00000014   Code   RO         69  .text.ADC12_ready_wait	Obj/FWlib_apt32f102a_adc.o
+    0x00002290   0x00000018   Code   RO         71  .text.ADC12_SEQEND_wait	Obj/FWlib_apt32f102a_adc.o
+    0x000022a8   0x0000007c   Code   RO         73  .text.ADC12_Configure_Mode	Obj/FWlib_apt32f102a_adc.o
+    0x00002324   0x00000198   Code   RO         74  .text.ADC12_Configure_VREF_Selecte	Obj/FWlib_apt32f102a_adc.o
+    0x000024bc   0x00000180   Code   RO         76  .text.ADC12_ConversionChannel_Config	Obj/FWlib_apt32f102a_adc.o
+    0x0000263c   0x0000001c   Code   RO         95  .text.BT_DeInit	Obj/FWlib_apt32f102a_bt.o
+    0x00002658   0x00000008   Code   RO         97  .text.BT_Start 	Obj/FWlib_apt32f102a_bt.o
+    0x00002660   0x0000000a   Code   RO        101  .text.BT_Soft_Reset	Obj/FWlib_apt32f102a_bt.o
+    0x0000266a   0x00000018   Code   RO        102  .text.BT_Configure	Obj/FWlib_apt32f102a_bt.o
+    0x00002682   0x0000002c   Code   RO        103  .text.BT_ControlSet_Configure	Obj/FWlib_apt32f102a_bt.o
+    0x000026ae   0x00000006   Code   RO        104  .text.BT_Period_CMP_Write	Obj/FWlib_apt32f102a_bt.o
+    0x000026b4   0x00000012   Code   RO        111  .text.BT_ConfigInterrupt_CMD	Obj/FWlib_apt32f102a_bt.o
+    0x000026c8   0x00000010   Code   RO        112  .text.BT0_INT_ENABLE	Obj/FWlib_apt32f102a_bt.o
+    0x000026d8   0x00000018   Code   RO        131  .text.CORET_DeInit	Obj/FWlib_apt32f102a_coret.o
+    0x000026f0   0x00000018   Code   RO        132  .text.CORET_Int_Enable	Obj/FWlib_apt32f102a_coret.o
+    0x00002708   0x00000010   Code   RO        136  .text.CORET_start	Obj/FWlib_apt32f102a_coret.o
+    0x00002718   0x00000010   Code   RO        138  .text.CORET_CLKSOURCE_EX	Obj/FWlib_apt32f102a_coret.o
+    0x00002728   0x00000010   Code   RO        140  .text.CORET_TICKINT_Enable	Obj/FWlib_apt32f102a_coret.o
+    0x00002738   0x00000010   Code   RO        142  .text.CORET_reload	Obj/FWlib_apt32f102a_coret.o
+    0x00002748   0x000000e0   Code   RO        288  .text.GPIO_Init	Obj/FWlib_apt32f102a_gpio.o
+    0x00002828   0x00000008   Code   RO        303  .text.GPIO_Write_High	Obj/FWlib_apt32f102a_gpio.o
+    0x00002830   0x00000008   Code   RO        304  .text.GPIO_Write_Low	Obj/FWlib_apt32f102a_gpio.o
+    0x00002838   0x000000a0   Code   RO        407  .text.Page_ProgramData	Obj/FWlib_apt32f102a_ifc.o
+    0x000028d8   0x0000002e   Code   RO        409  .text.ReadDataArry	Obj/FWlib_apt32f102a_ifc.o
+    0x00002908   0x00000014   Code   RO        448  .text.LPT_Soft_Reset	Obj/FWlib_apt32f102a_lpt.o
+    0x0000291c   0x00000020   Code   RO        532  .text.SPI_DeInit	Obj/FWlib_apt32f102a_spi.o
+    0x0000293c   0x00000034   Code   RO        533  .text.SPI_NSS_IO_Init	Obj/FWlib_apt32f102a_spi.o
+    0x00002970   0x000000b0   Code   RO        534  .text.SPI_Master_Init	Obj/FWlib_apt32f102a_spi.o
+    0x00002a20   0x0000001c   Code   RO        538  .text.SPI_ConfigInterrupt_CMD	Obj/FWlib_apt32f102a_spi.o
+    0x00002a3c   0x00000010   Code   RO        539  .text.SPI_Int_Enable	Obj/FWlib_apt32f102a_spi.o
+    0x00002a4c   0x00000074   Code   RO        558  .text.SYSCON_General_CMD.part.0	Obj/FWlib_apt32f102a_syscon.o
+    0x00002ac0   0x00000058   Code   RO        559  .text.SYSCON_RST_VALUE	Obj/FWlib_apt32f102a_syscon.o
+    0x00002b18   0x00000030   Code   RO        561  .text.SYSCON_General_CMD	Obj/FWlib_apt32f102a_syscon.o
+    0x00002b48   0x00000078   Code   RO        562  .text.SystemCLK_HCLKDIV_PCLKDIV_Config	Obj/FWlib_apt32f102a_syscon.o
+    0x00002bc0   0x00000028   Code   RO        565  .text.SYSCON_HFOSC_SELECTE	Obj/FWlib_apt32f102a_syscon.o
+    0x00002be8   0x0000003c   Code   RO        566  .text.SYSCON_WDT_CMD	Obj/FWlib_apt32f102a_syscon.o
+    0x00002c24   0x00000014   Code   RO        567  .text.SYSCON_IWDCNT_Reload	Obj/FWlib_apt32f102a_syscon.o
+    0x00002c38   0x00000018   Code   RO        568  .text.SYSCON_IWDCNT_Config	Obj/FWlib_apt32f102a_syscon.o
+    0x00002c50   0x00000020   Code   RO        569  .text.SYSCON_LVD_Config	Obj/FWlib_apt32f102a_syscon.o
+    0x00002c70   0x0000001c   Code   RO        570  .text.LVD_Int_Enable	Obj/FWlib_apt32f102a_syscon.o
+    0x00002c8c   0x00000040   Code   RO        575  .text.EXTI_trigger_CMD	Obj/FWlib_apt32f102a_syscon.o
+    0x00002ccc   0x0000000c   Code   RO        600  .text.SYSCON_Int_Enable	Obj/FWlib_apt32f102a_syscon.o
+    0x00002cd8   0x0000011c   Code   RO        627  .text.tk_parameter_init	Obj/FWlib_apt32f102a_tkey_parameter.o
+    0x00002df4   0x00000018   Code   RO        643  .text.UART1_DeInit	Obj/FWlib_apt32f102a_uart.o
+    0x00002e0c   0x000000d8   Code   RO        657  .text.UART_IO_Init	Obj/FWlib_apt32f102a_uart.o
+    0x00002ee4   0x0000000a   Code   RO        658  .text.UARTInit 	Obj/FWlib_apt32f102a_uart.o
+    0x00002eee   0x0000000e   Code   RO        662  .text.UARTTxByte	Obj/FWlib_apt32f102a_uart.o
+    0x00002efc   0x00000018   Code   RO        686  .text.WWDT_CONFIG	Obj/FWlib_apt32f102a_wwdt.o
+    0x00002f14   0x00000010   Code   RO        688  .text.WWDT_CNT_Load	Obj/FWlib_apt32f102a_wwdt.o
+    0x00002f24   0x00000034   Code   RO        689  .text.WWDT_Int_Config	Obj/FWlib_apt32f102a_wwdt.o
+    0x00002f58   0x000000b8   Code   RO        705  .text.startup.main	Obj/main.o
+    0x00003010   0x0000002c   Code   RO        721  .text.delay_nms	Obj/apt32f102a_initial.o
+    0x0000303c   0x0000006c   Code   RO        723  .text.GPIO_CONFIG	Obj/apt32f102a_initial.o
+    0x000030a8   0x00000060   Code   RO        726  .text.BT_CONFIG	Obj/apt32f102a_initial.o
+    0x00003108   0x00000038   Code   RO        731  .text.SPI_MASTER_CONFIG	Obj/apt32f102a_initial.o
+    0x00003140   0x00000020   Code   RO        736  .text.UART1_CONFIG	Obj/apt32f102a_initial.o
+    0x00003160   0x00000074   Code   RO        740  .text.SYSCON_CONFIG	Obj/apt32f102a_initial.o
+    0x000031d4   0x0000003c   Code   RO        741  .text.APT32F102_init	Obj/apt32f102a_initial.o
+    0x00003210   0x000000f8   Code   RO        757  .text.SYSCONIntHandler	Obj/apt32f102a_interrupt.o
+    0x00003308   0x00000068   Code   RO        758  .text.IFCIntHandler	Obj/apt32f102a_interrupt.o
+    0x00003370   0x00000068   Code   RO        759  .text.ADCIntHandler	Obj/apt32f102a_interrupt.o
+    0x000033d8   0x000001a8   Code   RO        760  .text.EPT0IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003580   0x00000034   Code   RO        761  .text.WWDTHandler	Obj/apt32f102a_interrupt.o
+    0x000035b4   0x00000080   Code   RO        762  .text.GPT0IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003634   0x00000070   Code   RO        763  .text.RTCIntHandler	Obj/apt32f102a_interrupt.o
+    0x000036a4   0x0000003c   Code   RO        764  .text.UART0IntHandler	Obj/apt32f102a_interrupt.o
+    0x000036e0   0x0000003c   Code   RO        765  .text.UART1IntHandler	Obj/apt32f102a_interrupt.o
+    0x0000371c   0x0000003c   Code   RO        766  .text.UART2IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003758   0x000000e8   Code   RO        767  .text.SPI0IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003840   0x00000084   Code   RO        768  .text.SIO0IntHandler	Obj/apt32f102a_interrupt.o
+    0x000038c4   0x00000030   Code   RO        769  .text.EXI0IntHandler	Obj/apt32f102a_interrupt.o
+    0x000038f4   0x00000030   Code   RO        770  .text.EXI1IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003924   0x00000048   Code   RO        771  .text.EXI2to3IntHandler	Obj/apt32f102a_interrupt.o
+    0x0000396c   0x0000005c   Code   RO        772  .text.EXI4to9IntHandler	Obj/apt32f102a_interrupt.o
+    0x000039c8   0x00000060   Code   RO        773  .text.EXI10to15IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003a28   0x00000034   Code   RO        774  .text.LPTIntHandler	Obj/apt32f102a_interrupt.o
+    0x00003a5c   0x00000050   Code   RO        775  .text.BT0IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003aac   0x00000048   Code   RO        776  .text.BT1IntHandler	Obj/apt32f102a_interrupt.o
+    0x00003af4   0x00000002   Code   RO        777  .text.PriviledgeVioHandler	Obj/apt32f102a_interrupt.o
+    0x00003af6   0x00000008   Code   RO        779  .text.PendTrapHandler	Obj/apt32f102a_interrupt.o
+    0x00003afe   0x00000008   Code   RO        780  .text.Trap3Handler	Obj/apt32f102a_interrupt.o
+    0x00003b06   0x00000008   Code   RO        781  .text.Trap2Handler	Obj/apt32f102a_interrupt.o
+    0x00003b0e   0x00000008   Code   RO        782  .text.Trap1Handler	Obj/apt32f102a_interrupt.o
+    0x00003b16   0x00000008   Code   RO        783  .text.Trap0Handler	Obj/apt32f102a_interrupt.o
+    0x00003b1e   0x00000008   Code   RO        784  .text.UnrecExecpHandler	Obj/apt32f102a_interrupt.o
+    0x00003b26   0x00000008   Code   RO        785  .text.BreakPointHandler	Obj/apt32f102a_interrupt.o
+    0x00003b2e   0x00000008   Code   RO        786  .text.AccessErrHandler	Obj/apt32f102a_interrupt.o
+    0x00003b36   0x00000008   Code   RO        787  .text.IllegalInstrHandler	Obj/apt32f102a_interrupt.o
+    0x00003b3e   0x00000008   Code   RO        788  .text.MisalignedHandler	Obj/apt32f102a_interrupt.o
+    0x00003b46   0x00000008   Code   RO        789  .text.CNTAIntHandler	Obj/apt32f102a_interrupt.o
+    0x00003b4e   0x00000008   Code   RO        790  .text.I2CIntHandler	Obj/apt32f102a_interrupt.o
+    0x00003b58   0x00000024   Code   RO        806  .text.__divsi3 	Obj/drivers_apt32f102.o
+    0x00003b7c   0x00000024   Code   RO        807  .text.__udivsi3	Obj/drivers_apt32f102.o
+    0x00003ba0   0x00000024   Code   RO        809  .text.__umodsi3	Obj/drivers_apt32f102.o
+    0x00003bc4   0x00000006   Code   RO        827  .text.CK_CPU_EnAllNormalIrq	Obj/drivers_apt32f102_ck801.o
+    0x00003bcc   0x000001a4   Code   RO        842  .text.adc_conver	Obj/User_analog.o
+    0x00003d70   0x0000001c   Code   RO        843  .text.adc_task 	Obj/User_analog.o
+    0x00003d8c   0x00000064   Code   RO        859  .text.key_scan1	Obj/User_key.o
+    0x00003df0   0x00000064   Code   RO        860  .text.key_scan2	Obj/User_key.o
+    0x00003e54   0x00000064   Code   RO        861  .text.key_scan3	Obj/User_key.o
+    0x00003eb8   0x00000024   Code   RO        862  .text.task_key 	Obj/User_key.o
+    0x00003edc   0x00000084   Code   RO        897  .text.task_sys 	Obj/User_logic.o
+    0x00003f60   0x00000188   Code   RO        898  .text.cal_comput	Obj/User_logic.o
+    0x000040e8   0x00000038   Code   RO        916  .text.Task_Marks_Handler_Callback	Obj/User_task.o
+    0x00004120   0x00000030   Code   RO        917  .text.Task_Pro_Handler_Callback	Obj/User_task.o
+    0x00004150   0x000000f0   Code   RO        950  .text.gui_home 	Obj/User_gui.o
+    0x00004240   0x000000ac   Code   RO        951  .text.gui_set  	Obj/User_gui.o
+    0x000042ec   0x00000034   Code   RO        952  .text.gui_option2	Obj/User_gui.o
+    0x00004320   0x0000032c   Code   RO        953  .text.gui_calibration	Obj/User_gui.o
+    0x0000464c   0x000000a4   Code   RO        954  .text.task_gui 	Obj/User_gui.o
+    0x000046f0   0x00000038   Code   RO        971  .text.LCD_Fill 	Obj/LCD_lcd.o
+    0x00004728   0x00000014   Code   RO        972  .text.LCD_DrawPoint	Obj/LCD_lcd.o
+    0x0000473c   0x0000012c   Code   RO        981  .text.LCD_ShowChar	Obj/LCD_lcd.o
+    0x00004868   0x00000040   Code   RO        982  .text.LCD_ShowString	Obj/LCD_lcd.o
+    0x000048a8   0x0000009c   Code   RO        984  .text.LCD_ShowIntNum	Obj/LCD_lcd.o
+    0x00004944   0x00000020   Code   RO       1005  .text.LCD_WR_DATA8	Obj/LCD_lcd_init.o
+    0x00004964   0x00000038   Code   RO       1006  .text.LCD_WR_DATA	Obj/LCD_lcd_init.o
+    0x0000499c   0x0000003c   Code   RO       1007  .text.LCD_WR_REG	Obj/LCD_lcd_init.o
+    0x000049d8   0x00000038   Code   RO       1008  .text.LCD_Address_Set	Obj/LCD_lcd_init.o
+    0x00004a10   0x0000024c   Code   RO       1009  .text.LCD_Init 	Obj/LCD_lcd_init.o
+    0x00004c5c   0x00000010   Code   RO       1042  .text.TK_ConfigInterrupt_CMD.part.0	FWlib_apt32f102_tkey.o
+    0x00004c6c   0x00000028   Code   RO       1044  .text.tk_clk_config	FWlib_apt32f102_tkey.o
+    0x00004c94   0x000000bc   Code   RO       1045  .text.TK_con0_config	FWlib_apt32f102_tkey.o
+    0x00004d50   0x00000134   Code   RO       1048  .text.TK_IO_Enable	FWlib_apt32f102_tkey.o
+    0x00004e84   0x000000cc   Code   RO       1049  .text.TK_Sampling_prog	FWlib_apt32f102_tkey.o
+    0x00004f50   0x000000a0   Code   RO       1053  .text.TKEYIntHandler	FWlib_apt32f102_tkey.o
+    0x00004ff0   0x00000028   Code   RO       1054  .text.get_key_number	FWlib_apt32f102_tkey.o
+    0x00005018   0x0000013c   Code   RO       1055  .text.TK_Baseline_prog	FWlib_apt32f102_tkey.o
+    0x00005154   0x00000058   Code   RO       1056  .text.TK_Scan_Start	FWlib_apt32f102_tkey.o
+    0x000051ac   0x000003e8   Code   RO       1057  .text.TK_Keymap_prog	FWlib_apt32f102_tkey.o
+    0x00005594   0x00000114   Code   RO       1058  .text.TK_overflow_predict	FWlib_apt32f102_tkey.o
+    0x000056a8   0x00000504   Code   RO       1059  .text.TK_Baseline_tracking	FWlib_apt32f102_tkey.o
+    0x00005bac   0x000000fc   Code   RO       1060  .text.TK_result_prog	FWlib_apt32f102_tkey.o
+    0x00005ca8   0x00000078   Code   RO       1061  .text.CORETHandler	FWlib_apt32f102_tkey.o
+    0x00005d20   0x00000034   Code   RO       1062  .text.get_key_seq	FWlib_apt32f102_tkey.o
+    0x00005d54   0x00000038   Code   RO       1063  .text.CORET_CONFIG	FWlib_apt32f102_tkey.o
+    0x00005d8c   0x0000001c   Code   RO       1064  .text.tk_chxval_seqxcon_clr	FWlib_apt32f102_tkey.o
+    0x00005da8   0x000001bc   Code   RO       1065  .text.tk_init  	FWlib_apt32f102_tkey.o
+    0x00005f64   0x00000284   Code   RO       1082  .text.std_clk_calib	FWlib_apt32f102_clkcalib.o
+    0x000061e8   0x000033f4   Data   RO        987  .rodata        	Obj/LCD_lcd.o
+    0x000095dc   0x00000030   Data   RO       1105  .rodata        	pow.o
+    0x0000960c   0x00000010   Data   RO       1196  .rodata        	_thenan_sf.o
+    0x0000961c   0x00000014   Data   RO       1266  .rodata        	_thenan_df.o
+    0x00009630   0x00000100   Data   RO       1342  .rodata        	_clz.o
+    0x00009730   0x0000002a   Data   RO        899  .rodata.str1.1 	Obj/User_logic.o
+    0x0000975a   0x00000041   Data   RO        955  .rodata.str1.1 	Obj/User_gui.o
+    0x0000979b   0x00000001   PAD
+
+    Region RAM (Base: 0x20000000, Size: 0x0000050c, Max: 0x00001000)
+
+    Base Addr    Size         Type   Attr      Idx   Section Name       Object
+    0x20000000   0x00000068   Data   RW        804  .data          	Obj/drivers_apt32f102.o
+    0x20000068   0x00000028   Data   RW        914  .data          	Obj/User_task.o
+    0x20000090   0x00000030   Data   RW        948  .data          	Obj/User_gui.o
+    0x200000c0   0x00000038   Data   RW       1040  .data          	FWlib_apt32f102_tkey.o
+    0x200000f8   0x00000010   Zero   RW        841  .bss           	Obj/User_analog.o
+    0x20000108   0x0000001a   Zero   RW        858  .bss           	Obj/User_key.o
+    0x20000122   0x00000002   PAD
+    0x20000124   0x00000034   Zero   RW        896  .bss           	Obj/User_logic.o
+    0x20000158   0x00000006   Zero   RW        949  .bss           	Obj/User_gui.o
+    0x2000015e   0x00000002   PAD
+    0x20000160   0x00000086   Zero   RW        638  COMMON         	Obj/FWlib_apt32f102a_tkey_parameter.o
+    0x200001e6   0x00000002   PAD
+    0x200001e8   0x00000038   Zero   RW        802  COMMON         	Obj/apt32f102a_interrupt.o
+    0x20000220   0x00000001   Zero   RW        874  COMMON         	Obj/User_key.o
+    0x20000221   0x00000003   PAD
+    0x20000224   0x00000020   Zero   RW        912  COMMON         	Obj/User_logic.o
+    0x20000244   0x000002c8   Zero   RW       1078  COMMON         	FWlib_apt32f102_tkey.o
+
+    Region *default* (Base: 0x00000000, Size: 0x00000000, Max: 0xffffffff)
+
+
+======================================================================
+
+Image component sizes
+
+       Code    RO Data    RW Data    ZI Data      Debug   Object Name
+
+          0          0          0          0          0   linker stubs
+        436          0          0          0        266   Obj/arch_crt0.o
+         56          0          0          0        802   Obj/arch_mem_init.o
+        358          0          0          0      11913   Obj/arch_apt32f102a_iostring.o
+       1102          0          0          0      14025   Obj/FWlib_apt32f102a_adc.o
+        154          0          0          0      11845   Obj/FWlib_apt32f102a_bt.o
+        112          0          0          0       8437   Obj/FWlib_apt32f102a_coret.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_countera.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_crc.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_ept.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_et.o
+        240          0          0          0      13105   Obj/FWlib_apt32f102a_gpio.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_gpt.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_i2c.o
+        206          0          0          0      16694   Obj/FWlib_apt32f102a_ifc.o
+         20          0          0          0      13554   Obj/FWlib_apt32f102a_lpt.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_rtc.o
+          0          0          0          0          0   Obj/FWlib_apt32f102a_sio.o
+        304          0          0          0      10641   Obj/FWlib_apt32f102a_spi.o
+        652          0          0          0      18730   Obj/FWlib_apt32f102a_syscon.o
+        284          0          0        134       8716   Obj/FWlib_apt32f102a_tkey_parameter.o
+        264          0          0          0      11625   Obj/FWlib_apt32f102a_uart.o
+         92          0          0          0       8332   Obj/FWlib_apt32f102a_wwdt.o
+        184          0          0          0      12470   Obj/main.o
+        512          0          0          0      22033   Obj/apt32f102a_initial.o
+       2374          0          0         56      13255   Obj/apt32f102a_interrupt.o
+        108          0        104          0       8381   Obj/drivers_apt32f102.o
+          6          0          0          0       8322   Obj/drivers_apt32f102_ck801.o
+        448          0          0         16       9174   Obj/User_analog.o
+        336          0          0         27       9406   Obj/User_key.o
+          0          0          0          0          0   Obj/User_led.o
+        524         42          0         84      11806   Obj/User_logic.o
+        104          0         40          0       9043   Obj/User_task.o
+          0          0          0          0          0   Obj/User_uart.o
+       1440         65         48          6      12106   Obj/User_gui.o
+        596      13300          0          0      15855   Obj/LCD_lcd.o
+        792          0          0          0       8901   Obj/LCD_lcd_init.o
+          0          0          0          0          0   Obj/__rt_entry.o
+	------------------------------------------------------------
+      11704      13407        192        323     289437   Object Totals
+         12          1          0          9          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+    [Library Name]: .\lib_102TKey_1_15.a
+	------------------------------------------------------------
+       Code    RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       4872          0         56        712      16440   FWlib_apt32f102_tkey.o
+	------------------------------------------------------------
+       4872          0         56        712      16440   Library Totals
+          0          0          0          0          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+    [Library Name]: .\lib_102ClkCalib_1_03.a
+	------------------------------------------------------------
+       Code    RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        644          0          0          0       8689   FWlib_apt32f102_clkcalib.o
+	------------------------------------------------------------
+        644          0          0          0       8689   Library Totals
+          0          0          0          0          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+    [Library Name]: c:/c-sky/cdkrepo/toolchain/ckv2elfminilib/v3.10.29/r/bin/../lib/gcc/csky-elfabiv2/6.3.0/../../../../csky-elfabiv2/lib/ck801\libm.a
+	------------------------------------------------------------
+       Code    RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       2474         48          0          0          0   pow.o
+          6          0          0          0          0   fabs.o
+         32          0          0          0          0   scalbn.o
+        376          0          0          0          0   sqrt.o
+	------------------------------------------------------------
+       2888         48          0          0          0   Library Totals
+          0          0          0          0          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+    [Library Name]: c:/c-sky/cdkrepo/toolchain/ckv2elfminilib/v3.10.29/r/bin/../lib/gcc/csky-elfabiv2/6.3.0/ck801\libgcc.a
+	------------------------------------------------------------
+       Code    RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         20          0          0          0          0   _csky_case_uqi.o
+         26          0          0          0          0   _csky_case_uhi.o
+         46          0          0          0          0   _fixunssfsi.o
+         56          0          0          0          0   _fixunsdfsi.o
+        426          0          0          0          0   _addsub_sf.o
+        280          0          0          0          0   _mul_sf.o
+         56          0          0          0          0   _ge_sf.o
+        100          0          0          0          0   _si_to_sf.o
+         84          0          0          0          0   _sf_to_si.o
+          0         16          0          0          0   _thenan_sf.o
+        826          0          0          0          0   _addsub_df.o
+        564          0          0          0          0   _mul_df.o
+        340          0          0          0          0   _div_df.o
+         60          0          0          0          0   _gt_df.o
+         60          0          0          0          0   _ge_df.o
+         58          0          0          0          0   _le_df.o
+        112          0          0          0          0   _si_to_df.o
+        112          0          0          0          0   _df_to_si.o
+         48          0          0          0          0   _df_to_sf.o
+          0         20          0          0          0   _thenan_df.o
+         84          0          0          0          0   _usi_to_df.o
+         68          0          0          0          0   _muldi3.o
+         64          0          0          0          0   _clzsi2.o
+        184          0          0          0          0   _pack_sf.o
+        132          0          0          0          0   _unpack_sf.o
+        120          0          0          0          0   _fpcmp_parts_sf.o
+         22          0          0          0          0   _make_sf.o
+        412          0          0          0          0   _pack_df.o
+        196          0          0          0          0   _unpack_df.o
+        140          0          0          0          0   _fpcmp_parts_df.o
+          0        256          0          0          0   _clz.o
+	------------------------------------------------------------
+       4696        292          0          0          0   Library Totals
+          0          0          0          0          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+    [Library Name]: c:/c-sky/cdkrepo/toolchain/ckv2elfminilib/v3.10.29/r/bin/../lib/gcc/csky-elfabiv2/6.3.0/../../../../csky-elfabiv2/lib/ck801\libc.a
+	------------------------------------------------------------
+       Code    RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        136          0          0          0          0   memset_fast.o
+        100          0          0          0          0   memcpy_fast.o
+	------------------------------------------------------------
+        236          0          0          0          0   Library Totals
+          0          0          0          0          0   Pad
+          0          0          0          0          0   LD_GEN
+
+	------------------------------------------------------------
+
+======================================================================
+
+
+       Code    RO Data    RW Data    ZI Data      Debug
+      25052      13748        248       1044     314566   Grand Totals
+      25052      13748        248       1044     314566   Elf Image Totals
+      25052      13748        248          0          0   ROM Totals
+
+======================================================================
+
+Total	RO	Size (Code + RO Data)				38800 (  37.89kB)
+Total	RW	Size (RW Data + ZI Data)			1292 (  1.26kB)
+Total	ROM	Size (Code + RO Data + RW Data)		39048 (  38.13kB)
+
+======================================================================
