@@ -69,6 +69,8 @@ void gui_home(void)
     LCD_ShowString(45, 40, "mA(<50)", BLACK, GREEN, 16, 0);
     LCD_ShowIntNum(10, 60, adc_result_conver[CH_USB1], 4, RED, WHITE, 16);
     LCD_ShowString(45, 60, "mA", BLACK, GREEN, 16, 0);
+    LCD_Fill(0,0,160,80,BLUE);
+    LCD_Fill(0, 0, 160, 80, BLACK);
 }
 void gui_set(void)
 {

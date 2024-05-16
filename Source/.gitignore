@@ -4,7 +4,7 @@
 *.o
 *.d
 *.mk
-*.cdkproj
+
 *.cdkws
 *.txt
 *.json
